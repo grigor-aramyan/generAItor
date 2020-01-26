@@ -1,0 +1,1 @@
+# Initial README for GenerAItor platform
