@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+//<<<<<<< HEAD
+import Partners from "./Partners";
+//=======
 // import Main from './Main';
 // import Info from './Info';
-// import Intouch from './Intouch';
+//>>>>>>> 93f179cd087e34ac3e8f733236a69a6e3c125764
 
 // actions
 import {
@@ -53,7 +56,7 @@ class App extends Component {
 
         return(
             <div>
-                <h1>home page</h1>
+                {/* <h1>home page</h1>
                 <br />
                 <button onClick={this.props.incrementCounter}>+</button>
                 <p>{ counter }</p>
@@ -67,8 +70,8 @@ class App extends Component {
                     id='counter-input'
                     type='number' />
                 <button onClick={this.onIncrementWithNumber}>+</button>
-                <button onClick={this.onDecrementWithNumber}>-</button>
-
+                <button onClick={this.onDecrementWithNumber}>-</button> */}
+                <Partners />
             </div>
         );
     }
