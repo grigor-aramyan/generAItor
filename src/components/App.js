@@ -1,7 +1,12 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+<<<<<<< HEAD
 import NewPartners from "./NewPartners.js";
+=======
+// import Main from './Main';
+// import Info from './Info';
+>>>>>>> 93f179cd087e34ac3e8f733236a69a6e3c125764
 
 // actions
 import {
