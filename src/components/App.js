@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
+// import Main from './Main';
+// import Info from './Info';
 
 // actions
 import {
