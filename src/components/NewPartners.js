@@ -1,27 +1,16 @@
-import React from "react";
-
-class NewPartners {
-    constructor() {
-        super(props);
-    }
+import React, { Component } from 'react';
+ class NewPartners extends React {
     render() {
         return (
-            <div className = "new-partners container">
-                <h1>New PArtners</h1>
-                <span></span>
-                <div className = "row">
-                    <div className = "col-md-4">
-                        <img src = "./../public/images/partner.png" />
-                    </div>
-                    <div className = "col-md-4">
-                        <img src = "./../public/images/partner.png" />
-                    </div>
-                    <div className = "col-md-4">
-                        <img src = "./../public/images/partner.png" />
-                    </div>
-                </div>
-                <img src = "./../public/images/partner.png" />
-            </div>
+            <button>fgfg</button>
+            // <div className = "new-partners container">
+            //     <h1>New Partners</h1>
+            //     <span></span>
+            //     <div className = "row">
+            //         <button>dfd</button>
+            //     </div>
+              
+            // </div>
         )
     }
     
