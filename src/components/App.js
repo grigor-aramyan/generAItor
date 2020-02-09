@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 // import Main from './Main';
 // import Info from './Info';
+// import Intouch from './Intouch';
 
 // actions
 import {
