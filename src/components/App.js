@@ -2,10 +2,6 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 
-// import Partners from './Partners';
-// import Main from './Main';
-// import Info from './Info';
-
 // actions
 import {
     incrementCounter,
@@ -54,7 +50,7 @@ class App extends Component {
 
         return(
             <div>
-                { <h1>home page</h1>
+                <h1>home page</h1>
                 <br />
                 <button onClick={this.props.incrementCounter}>+</button>
                 <p>{ counter }</p>

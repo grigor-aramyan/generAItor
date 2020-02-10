@@ -6,10 +6,8 @@ import store from './store';
 
 // Components
 import App from './components/App';
-import Header from './components/Header';
-import Services from './components/Services';
-import Footer from './components/Footer';
-import Pricing from './components/Pricing/Pricing';
+import AboutUsPage from './components/aboutUs/AboutUsPage';
+import Homepage from './components/homepage/Homepage';
 
 ReactDOM.render(
   <Provider store={store}>
