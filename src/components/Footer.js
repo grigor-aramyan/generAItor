@@ -7,48 +7,40 @@ export default class Footer extends Component {
         <div className="conatiner-fluid">
           <div className="footer-line"></div>
           <div className="row">
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center">
-              <div className="footer-link-wrapper">
+              <div className="footer-links-wrapper">
+                <ul>
+                  <li>
                 <a href="#" className="footer-link">
                   Contact Us
                 </a>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center ">
-              <div className="footer-link-wrapper">
+                </li>
+                <li>
                 <a href="#" className="footer-link">
                   Feedbacks
                 </a>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center">
-              <div className="footer-link-wrapper">
+                </li>
+                <li>
                 <a href="#" className="footer-link">
                   FAQ
                 </a>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center">
-              <div className="footer-link-wrapper">
+                </li>
+                <li>
                 <a href="#" className="footer-link">
                   Partners
                 </a>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center">
-              <div className="footer-link-wrapper">
+                </li>
+                <li>
                 <a href="#" className="footer-link">
                   News
                 </a>
-              </div>
-            </div>
-            <div className="col-lg-2 col-md-2 col-sm-1 col-3 text-center">
-              <div className="footer-link-wrapper">
+                </li>
+                <li>
                 <a href="#" className="footer-link">
                   Help
                 </a>
+                </li>
+              </ul>
               </div>
-            </div>
           </div>
           <div className="flex-container text-center">
             <div className="footer-social-icons-wrapper">
