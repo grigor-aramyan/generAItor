@@ -1,9 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-// import Main from './Main';
-// import Info from './Info';
-// import Intouch from './Intouch';
 
 // actions
 import {
@@ -68,7 +65,6 @@ class App extends Component {
                     type='number' />
                 <button onClick={this.onIncrementWithNumber}>+</button>
                 <button onClick={this.onDecrementWithNumber}>-</button>
-
             </div>
         );
     }

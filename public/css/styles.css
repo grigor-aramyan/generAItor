@@ -10,66 +10,33 @@
   font-family: 'Avenida Std';
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/Avenida-Std-Regular.otf');
+  src: url('../fonts/Avenida-Std-Regular.woff');
 }
 
 /* Header */
 
-.header-wrapper {
-  position: absolute;
-  width: 1320px;
-  height: 72px;
-  left: 60px;
-  top: 20px;
+.header {
+  padding-left:60px !important;
+  padding-right:60px !important;
 }
-
+.header-wrapper {
+  height: 72px;
+}
 .header-logo-wrapper {
-  position: absolute;
-  left: 0%;
-  right: 86.29%;
-  top: 0%;
-  bottom: 0%;
+  padding-top:20px;
   cursor: pointer;
 }
-
 .header-profile-logo-wrapper {
-  position: absolute;
-  left: 93.11%;
-  right: 5.3%;
-  top: 33.33%;
-  bottom: 33.33%;
+  padding-top: 44px;
   cursor: pointer;
 }
 .heaader-burger {
   cursor: pointer;
+  margin-left:30px;
+  padding-top:45px;
 }
-.header-rectangle1 {
-  position: absolute;
-  left: 96.97%;
-  right: 0%;
-  top: 34.72%;
-  bottom: 61.11%;
-  background: #000000;
-}
-
-.header-rectangle2 {
-  position: absolute;
-  left: 96.97%;
-  right: 0%;
-  top: 48.61%;
-  bottom: 47.22%;
-
-  background: #000000;
-}
-
-.header-rectangle3 {
-  position: absolute;
-  left: 96.97%;
-  right: 0%;
-  top: 62.5%;
-  bottom: 33.33%;
-
-  background: #000000;
+.heaader-burger img  {
+  margin-bottom:7px;
 }
 
 /* Service */
@@ -202,37 +169,24 @@
 /* Footer */
 
 .footer-wrapper {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 0%;
-  bottom: -9.84%;
   background: #ffffff;
 }
 
 .footer-line {
-  position: absolute;
   width: 100%;
-  height: 0px;
-  left: 0px;
-  top: 0px;
+  height: 0px; 
   border: 1px solid #edc536;
 }
 
 .footer-link-wrapper {
-  position: absolute;
-  left: 28.47%;
-  right: 63.47%;
-  top: 16.39%;
-  bottom: 75.96%;
   width: 118px;
   height: 28px;
   margin-top: 60px;
+  margin-left: 30px;
+  margin-bottom: 30px;
 }
 
 .footer-link {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 24px;
   line-height: 28px;
@@ -244,66 +198,50 @@
 .footer-link:hover {
   text-decoration: none;
 }
-
-.footer-social-icons-wrapper {
-  width: 96px;
-  height: 43px;
-  margin: 118px auto;
+.flex-contatiner {
   display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 311px;
+  margin-bottom: 30px;
 }
-
-.footer-icon1 {
+.footer-social-icons-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  
+}
+.footer-icon {
   width: 42.41px;
   height: 43px;
-  margin-top: 60px;
+  margin-bottom: 30px;
   margin-right: 7.7px;
 }
 
-.footer-icon2 {
-  width: 42.41px;
-  height: 43px;
-  margin-top: 60px;
+.footer-contacts {
+  width: 571px;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  text-align: center;
+  margin: 0 auto;
 }
-
 .footer-address {
-  width: 89px;
-  height: 28px;
-  margin: 30px auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-
-  color: #000000;
-}
-
-.footer-phone {
-  width: 160px;
-  height: 28px;
-  margin: 30px auto;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 28px;
-  color: #000000;
+margin-bottom: 10px;
 }
 
 .footer-line2 {
-  width: 571.04px;
+  width: 571px;
   height: 0px;
-  margin: 60px auto;
-
+  margin: 30px auto;
   border: 1px solid #edc536;
 }
 
 .footer-privacy {
-  width: 250px;
-  height: 21px;
-  margin: auto;
-  font-family: Roboto;
-  font-style: normal;
+  width: 571px;
+  text-align: center;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -312,8 +250,6 @@
 }
 
 .footer-innovities {
-  font-family: Roboto;
-  font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
@@ -321,9 +257,15 @@
   letter-spacing: 0.13em;
   color: #edc536;
 }
-
+.copyright {
+  color: #000000;
+}
+.footer-copyright {
+  font-family: 'Avenida Std', serif;
+}
 .footer-span {
   color: #000000;
+  font-family: 'Avenida Std', serif;
 }
 
 /* <<<<<<< HEAD */
@@ -586,8 +528,9 @@
   line-height: 36px;
   text-align: center;
   color: #000000;
-  /* >>>>>>> 03f48e6ab1b62dd69ad042d2d55af8cb7d1c6a87 */
 }
+
+/* Pricing page start */
 
 .pricing-rectangle {
   position: absolute;
@@ -850,7 +793,9 @@
   color: #ffffff;
 }
 
-/* Pricing Page */
+/* Pricing Page end */
+
+/* Get in touch component styles */
 
 .in_touch hr {
   width: 742px;
@@ -920,6 +865,37 @@
   text-align: center;
   text-transform: uppercase;
   padding: 20px;
-
-  /* >>>>>>> 03f48e6ab1b62dd69ad042d2d55af8cb7d1c6a87 */
 }
+
+/* Get in touch component end */
+
+/*Start component Partners*/
+.partners {
+  margin-top:120px;
+}
+.new-partners h1 {
+  font:36px Avenida Std;
+  margin-top:120px;
+  margin-bottom:30px;
+  color:#000000;
+}
+.new-partners span {
+  width:466px;
+  max-width:100%;
+  display:block;
+  margin:auto;
+  border:1px solid #EDC536;
+}
+
+.partner {
+  width:277px;
+  max-width: 100%;
+  overflow:hidden;
+  height:126px;
+  margin-left:60px;
+  margin-right:60px;
+  
+}
+
+
+/*End component Partners*/

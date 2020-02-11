@@ -52,13 +52,14 @@ export default class Footer extends Component {
           </div>
           <div className="flex-container text-center">
             <div className="footer-social-icons-wrapper">
-              <div className="footer-icon1">
+              <div className="footer-icon">
                 <img src="images/fb-logo.png" alt="fb-logo" />
               </div>
-              <div className="footer-icon2">
+              <div className="footer-icon">
                 <img src="images/in-logo.png" alt="in-logo" />
               </div>
             </div>
+            <div className="footer-contacts">
             <div className="footer-address">
               <h2>Address</h2>
             </div>
@@ -70,9 +71,10 @@ export default class Footer extends Component {
               <p>Privacy and Cookie Policy</p>
             </div>
             <div className="footer-innovities">
-              <p>
-                © Innovities <span className="footer-span">2020</span>
+              <p className="footer-copyright">
+                <span className="copyright">©</span> Innovities <span className="footer-span">2020</span>
               </p>
+            </div>
             </div>
           </div>
         </div>
