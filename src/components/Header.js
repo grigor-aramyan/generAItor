@@ -36,6 +36,7 @@ export default class Header extends Component {
             </div>
           </div>
       </div>
+    </div>
     );
   }
 }

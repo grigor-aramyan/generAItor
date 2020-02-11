@@ -8,13 +8,14 @@ import store from './store';
 import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
+import Pricing from './components/pricing/Pricing';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route exact path="/" component={Pricing} />
           <Route
             path="/*"
             render={() => {
