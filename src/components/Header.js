@@ -3,14 +3,11 @@ import React, { Component } from 'react';
 export default class Header extends Component {
   render() {
     return (
-      <div className="container-fluid header">
-          <div className = "row">
-            <div className = "col-md-2 a">
-              <div className="header-logo-wrapper">
-                <a href = "#">
-                  <img src="images/logo_official.png" alt="logo_official" />
-                </a>
-              </div>
+      <div className="container-fluid">
+        <div className="col-10 offset-1 col-lg-8 offset-lg-1 div-wrapper d-flex justify-content-center align-items-center">
+          <div className="header-wrapper">
+            <div className="header-logo-wrapper">
+              <img src="images/logo_official.png" alt="logo_official" />
             </div>
             <div className = "offset-md-8"></div>
             <div className = "col-md-2">
