@@ -4,7 +4,7 @@ const Intouch = () => {
     return(
        <div>
            <section className="container-fluid in_touch">
-            <div>
+            <div className="in_touch_img">
                 <img className="in_touch-img" src="images/intouch-bg.jpg" alt="Get in touch"/>
                 <hr/>
             </div>
