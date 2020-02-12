@@ -12,7 +12,7 @@ const Intouch = () => {
             NEED TO GET IN TOUCH?
             </div>
             <div className="in_touch_box">
-                <div className="in_touch_div">
+              <div className="in_touch_div">
                 <img src="images/intouch_div.png" alt=""/>
                 </div>
                 <div className="get_in_touch-text">
@@ -21,7 +21,6 @@ const Intouch = () => {
                     <br/>
                     <button className="get_in_touch-button"><a href="#">contact us</a></button>
                 </div>
-
             </div>
            </section>
        </div> 

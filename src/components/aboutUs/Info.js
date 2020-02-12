@@ -5,7 +5,7 @@ const Info = () => {
         <div>
             <section className="container-fluid info">
                 <div className="image_content">
-                    <img src="images/info_img.jpg" alt="About us page"/>
+                    <img src="images/info_img.jpg" className="image_content-img" alt="About us page"/>
                     <div className="inner-title">INNOVITIES WE TRUST</div>
                 </div>
                 <div className="info_description">
