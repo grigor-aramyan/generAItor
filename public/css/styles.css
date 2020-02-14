@@ -43,128 +43,79 @@
 /* Service */
 
 .services-title-wrapper {
-  position: absolute;
-  width: 221px;
-  height: 43px;
-  left: 609px;
-  top: 948px;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
 
-  font-family: Avenida Std;
-  font-style: normal;
+.services-title {
+  font-family: 'Avenida Std', serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 64px;
-  /* or 178% */
-  font-size: 36px;
   letter-spacing: 0.08em;
-
   color: #000000;
-}
-
-.services-title-line {
-  position: absolute;
   width: 466px;
-  height: 0px;
-  left: 487px;
-  top: 1021px;
-
-  border: 1px solid #edc536;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edc536;
+}
+.services_content {
+  display: flex;
+  flex-direction: column;
 }
 
-.services-rectangle-1 {
-  position: absolute;
-  width: 456px;
-  height: 513px;
-  left: 78px;
-  top: 1214px;
-
-  background: #edc536;
+.inner_content {
+  width: 100%;
+  padding: 120px 78px 80px;
 }
 
-.services-image1-wrapper {
+.inner-image {
+  position: relative;
+}
+.serv_bg1 {
   position: absolute;
-  width: 670px;
+  left: -3%;
+  top: 12%;
+  z-index: -1;
+}
+.serv_bg2 {
+  position: absolute;
+  right: -2%;
+  top: 12%;
+  z-index: -1;
+}
+
+.inner-text {
+  display: flex;
   height: 495px;
-  left: 168px;
-  top: 1142px;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
-
-.services-text1-wrapper {
-  position: absolute;
-  width: 463px;
-  height: 80px;
-  left: 898px;
-  top: 1349px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
+.inner-text p {
   font-size: 24px;
   line-height: 40px;
   text-align: center;
   color: #000000;
+  margin-bottom: 30px;
 }
-
-.services-button-1 {
-  position: absolute;
-  left: 10%;
-  right: 0%;
-  top: 90%;
-  bottom: 0%;
-  width: 240px;
-  height: 61px;
-  margin: 30px auto;
-  line-height: 61px;
-  border: 2px solid #edc536;
-  box-sizing: border-box;
-  cursor: pointer;
-}
-
-.services-image2-wrapper {
-  position: absolute;
-  width: 641px;
-  height: 495px;
-  left: 618px;
-  top: 1847px;
-}
-
-.services-rectangle-2 {
-  position: absolute;
-  width: 456px;
-  height: 513px;
-  left: 893px;
-  top: 1919px;
-
-  background: #edc536;
-}
-
-.services-text2-wrapper {
-  position: absolute;
-  width: 468px;
-  height: 80px;
-  left: 90px;
-  top: 2054px;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: normal;
-  font-size: 24px;
-  line-height: 40px;
+.services_button {
+  width: 200px;
+  padding: 20px;
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
   text-align: center;
   color: #000000;
-}
-
-.services-button-2 {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: 90%;
-  bottom: 0%;
-  width: 240px;
-  height: 61px;
-  margin: 30px auto;
-  line-height: 61px;
   border: 2px solid #edc536;
-  box-sizing: border-box;
   cursor: pointer;
+}
+.services_button:hover {
+  text-decoration: none;
+  color: #000000;
 }
 
 /* Footer */
@@ -283,7 +234,7 @@ margin-bottom: 10px;
 /* Main component styles */
 
 .main {
-  padding-top: 100px;
+  padding-top: 120px;
   background-image: url(../images/main-bg.jpg);
   background-position: top right;
   background-repeat: no-repeat;
@@ -336,24 +287,21 @@ margin-bottom: 10px;
 }
 .main_img-1 {
   position: absolute;
-  left: 12%;
-  top: -6%;
+  left: -4%;
+  top: -3%;
 }
 .main_img-2 {
   position: absolute;
-  top: 42%;
-  left: 28%;
+  top: 45%;
+  left: 10%;
 }
-.main_right-side hr {
+.main_line {
   position: absolute;
-  border: 1px solid #edc536;
-  width: 591.31px;
-  height: 0px;
-  transform: rotate(46.37deg);
-  bottom: 31%;
-  left: 7.5%;
-  /* ======= */
+  bottom: 0;
+  left: -0.5%;
 }
+
+  /* ======= */
 
 /* Main component end */
 
@@ -395,6 +343,7 @@ margin-bottom: 10px;
   color: #000000;
   width: 466px;
   margin: 0 auto;
+  padding-bottom: 10px;
   border-bottom: 1px solid #edc536;
 }
 .inner-title {
@@ -689,14 +638,11 @@ margin-bottom: 10px;
   position: relative;
   height: 1086px;
 }
-.in_touch hr {
-  width: 742px;
-  height: 0px;
-  border: 1px solid #edc536;
-  transform: rotate(56.65deg);
+
+.about_line {
   position: absolute;
-  top: 22%;
-  left: -11.6%;
+  top: -4%;
+  left: 0;
 }
 
 .in_touch_img {
@@ -770,30 +716,26 @@ margin-bottom: 10px;
 
 /*Start component Partners*/
 .partners {
-  margin-top:120px;
+  margin-top: 120px;
 }
 .new-partners h1 {
-  font:36px Avenida Std;
-  margin-top:120px;
-  margin-bottom:30px;
-  color:#000000;
+    font-family: 'Avenida Std', serif;
+    font-weight: normal;
+    font-size: 36px;
+    line-height: 64px;
+    letter-spacing: 0.08em;
+    color: #000000;
+    width: 466px;
+    margin: 0 auto;
+    padding-bottom: 10px;
+    border-bottom: 1px solid #edc536;
 }
-.new-partners span {
-  width:466px;
-  max-width:100%;
-  display:block;
-  margin:auto;
-  border:1px solid #EDC536;
-}
-
 .partner {
   width:277px;
   max-width: 100%;
-  overflow:hidden;
-  height:126px;
-  margin-left:60px;
-  margin-right:60px;
-  
+  overflow: hidden;
+  height: 126px;
+  margin: 0px 60px 120px;
 }
 
 

@@ -2,10 +2,9 @@ import React from "react";
  export default class Partners extends React.Component {
      render(){
         return(
-            <div className = "container-fluid new-partners">
-                <div className = "container">
-                    <h1 className = "text-center">New partners</h1>
-                    <span ></span>
+            <section className = "container-fluid new-partners">
+                <div className = "container partners">
+                    <h1 className = "text-center">NEW PARTNERS</h1>
                     <div className = "row partners">
                         <div className = "col-md-4 d-flex justify-content-center">
                         <img
@@ -33,7 +32,7 @@ import React from "react";
                         </div>
                     </div>
                 </div>
-            </div>
+            </section>
         )
      }
  }

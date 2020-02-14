@@ -15,9 +15,9 @@ const Main = () => {
                 </div>
                 <div className="col-lg-6">
                 <div className="main_right-side">
-                        <img src="images/main_img-1.jpg" className="main_img-1" alt=""/>
-                        <img src="images/main_img-2.jpg" className="main_img-2" alt=""/>
-                        <hr/>
+                        <img src="images/main_img-1.jpg" className="main_img-1" alt="Main image"/>
+                        <img src="images/main_img-2.jpg" className="main_img-2" alt="Main image"/>
+                        <img src="images/main_line.svg" className="main_line" alt="Main line"/>
                     </div>
                 </div>
                 </div>
