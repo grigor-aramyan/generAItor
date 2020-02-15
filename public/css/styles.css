@@ -16,15 +16,15 @@
 /* Header */
 
 .header {
-  padding-left:60px !important;
-  padding-right:60px !important;
+  padding-left: 60px !important;
+  padding-right: 60px !important;
   position: absolute;
 }
 .header-wrapper {
   height: 72px;
 }
 .header-logo-wrapper {
-  padding-top:20px;
+  padding-top: 20px;
   cursor: pointer;
 }
 .header-profile-logo-wrapper {
@@ -33,11 +33,11 @@
 }
 .heaader-burger {
   cursor: pointer;
-  margin-left:30px;
-  padding-top:45px;
+  margin-left: 30px;
+  padding-top: 45px;
 }
-.heaader-burger img  {
-  margin-bottom:7px;
+.heaader-burger img {
+  margin-bottom: 7px;
 }
 
 /* Service */
@@ -126,7 +126,7 @@
 
 .footer-line {
   width: 100%;
-  height: 0px; 
+  height: 0px;
   border: 1px solid #edc536;
 }
 
@@ -170,7 +170,6 @@
   display: flex;
   flex-direction: row;
   justify-content: center;
-  
 }
 .footer-icon {
   width: 42.41px;
@@ -189,7 +188,7 @@
   margin: 0 auto;
 }
 .footer-address {
-margin-bottom: 10px;
+  margin-bottom: 10px;
 }
 
 .footer-line2 {
@@ -301,7 +300,7 @@ margin-bottom: 10px;
   left: -0.5%;
 }
 
-  /* ======= */
+/* ======= */
 
 /* Main component end */
 
@@ -369,7 +368,10 @@ margin-bottom: 10px;
 }
 
 /* Pricing page start */
-
+.pricing-header-wrapper {
+  position: relative;
+  z-index: 100;
+}
 .pricing-rectangle {
   position: absolute;
   width: 506px;
@@ -378,32 +380,26 @@ margin-bottom: 10px;
   top: 125px;
   background: #edc536;
 }
+.pricing-rectangle2 {
+  position: absolute;
+  width: 506px;
+  height: 681px;
+  right: 0px;
+  z-index: 1;
+  background: #edc536;
+}
 
 .pricing-image-wrapper {
   position: absolute;
   width: 1319px;
   height: 557px;
-  left: 60px;
+  /* left: 60px; */
+  margin-left: 60px;
   top: 125px;
-}
-
-.pricing-rectangle2 {
-  position: absolute;
-  width: 506px;
-  height: 681px;
-  left: 934px;
-  top: 0px;
-
-  background: #edc536;
+  z-index: 10;
 }
 
 .pricing-image-title {
-  position: absolute;
-  width: 251px;
-  height: 28px;
-  left: 590px;
-  top: 290px;
-
   font-family: Avenida Std;
   font-style: normal;
   font-weight: normal;
@@ -411,15 +407,23 @@ margin-bottom: 10px;
   line-height: 28px;
   text-align: center;
   letter-spacing: 0.08em;
-
+  white-space: nowrap;
   color: #000000;
+}
+.pricing-image-title-wrapper {
+  position: relative;
+  height: 28px;
+  top: 290px;
+  left: -43%;
+  z-index: 150;
+  text-align: center;
 }
 
 .pricing-idea-wrapper {
   /* width: 294px;
   height: 21px; */
   position: absolute;
-  top: 927px;
+  top: 345px;
   text-align: center;
 }
 
@@ -446,7 +450,7 @@ margin-bottom: 10px;
   width: 308px;
   height: 492px;
   margin: 100px auto;
-  top: 1038px;
+  top: 435px;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
@@ -528,12 +532,16 @@ margin-bottom: 10px;
 
   color: #ffffff;
 }
+.pricing-btn-text:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
 
 .pricing-organization-wrapper {
   position: absolute;
   width: 283px;
   height: 21px;
-  top: 1675px;
+  top: 1200px;
   margin: 120px auto;
   text-align: center;
 }
@@ -553,7 +561,7 @@ margin-bottom: 10px;
 
 .pricing-org-line {
   position: absolute;
-  top: 1856px;
+  top: 1360px;
   width: 550px;
   height: 0px;
   border: 1px solid #edc536;
@@ -562,43 +570,50 @@ margin-bottom: 10px;
 
 .pricing-org-rectangle {
   width: 308px;
-  height: 492px;
+  /* height: 492px; */
+  position: relative;
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-.pricing-free-line {
-  position: absolute;
+.pricing-org-free-title {
+  width: 36px;
+  height: 14px;
+  position: relative;
+  top: 60px;
+  left: 136px;
+  /* margin-top: 60px; */
+  font-family: Avenida Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 14px;
+  letter-spacing: 0.08em;
+
+  color: #000000;
+}
+.pricing-org-free-line {
   width: 131px;
   height: 0px;
-  margin: 100px auto;
-  margin-bottom: 100px;
-  left: 98px;
+  position: relative;
+  top: 67px;
+  left: 89px;
   border: 1px solid #edc536;
   background: url(../images/free-Line.png);
 }
 .pricing-org-rect-wrapper {
   position: absolute;
   display: flex;
-  top: 1986px;
+  top: 1460px;
+  margin-bottom: 200px;
 }
-
-.pricing-image {
-  position: absolute;
-  width: 1319px;
-  height: 557px;
-  left: 60px;
-  top: 125px;
-}
-
 .pricing-org-list-wrapper {
-  position: absolute;
+  position: relative;
   width: 248px;
-  height: 123px;
-  top: 194px;
-  left: 46px;
+  /* border: 1px solid red; */
+  top: 138px;
+  left: 30px;
 }
-
 .pricing-org-list-item {
   font-family: Roboto;
   font-style: normal;
@@ -611,24 +626,61 @@ margin-bottom: 10px;
   list-style-type: none;
 }
 
+.pricing-price-org {
+  width: 56px;
+  height: 42px;
+  display: flex;
+  margin-top: 191px;
+  position: relative;
+  /* top: 151px; */
+  left: 126px;
+  margin-bottom: 74px;
+}
+
 .pricing-org-subscribe-btn {
   width: 137px;
   height: 50px;
   background: #edc536;
   position: relative;
-  top: 467px;
+  top: 25px;
   left: 85px;
+  text-align: center;
 }
-
+.pricing-price-usd-org {
+  font-size: 18px;
+  line-height: 21px;
+}
+.pricing-price-num-org {
+  font-size: 36px;
+  line-height: 42px;
+}
 .pricing-org-btn-text {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 50px;
-  text-align: center;
+  /* text-align: center; */
   text-transform: uppercase;
   color: #ffffff;
+}
+
+.pricing-org-btn-text:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.pricing-image {
+  position: absolute;
+  width: 1319px;
+  height: 557px;
+  left: 60px;
+  top: 125px;
+}
+
+.pricing-footer-wrapper {
+  position: relative;
+  top: 2200px;
 }
 
 /* Pricing Page end */
@@ -680,7 +732,6 @@ margin-bottom: 10px;
   position: absolute;
   bottom: 54%;
   left: 53%;
-
 }
 .get_in_touch-text p {
   font-weight: normal;
@@ -719,24 +770,23 @@ margin-bottom: 10px;
   margin-top: 120px;
 }
 .new-partners h1 {
-    font-family: 'Avenida Std', serif;
-    font-weight: normal;
-    font-size: 36px;
-    line-height: 64px;
-    letter-spacing: 0.08em;
-    color: #000000;
-    width: 466px;
-    margin: 0 auto;
-    padding-bottom: 10px;
-    border-bottom: 1px solid #edc536;
+  font-family: 'Avenida Std', serif;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 64px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  width: 466px;
+  margin: 0 auto;
+  padding-bottom: 10px;
+  border-bottom: 1px solid #edc536;
 }
 .partner {
-  width:277px;
+  width: 277px;
   max-width: 100%;
   overflow: hidden;
   height: 126px;
   margin: 0px 60px 120px;
 }
-
 
 /*End component Partners*/

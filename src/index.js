@@ -15,7 +15,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={Homepage} />
+          <Route exact path="/" component={Pricing} />
           <Route
             path="/*"
             render={() => {
