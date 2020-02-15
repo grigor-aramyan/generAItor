@@ -227,7 +227,6 @@
   font-family: 'Avenida Std', serif;
 }
 
-/* <<<<<<< HEAD */
 /* Footer */
 
 /* Main component styles */
@@ -308,6 +307,7 @@
 
 .info {
   /* <<<<<<< HEAD */
+  padding-top: 120px;
   background-image: url(../images/info_bg.png);
   background-position: top right;
   background-repeat: no-repeat;
@@ -315,16 +315,24 @@
 
 .image_content {
   width: 100%;
-  height: 902px;
   position: relative;
-  margin-bottom: 60px;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 140px;
 }
-.image_content .image_content-img {
-  width: 1320px;
-  height: 697px;
+
+.inner-title {
+  font-family: 'Avenida Std', serif;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  width: 100%;
   position: absolute;
-  left: 44px;
-  top: 125px;
+  top: 50%;
+  transform: translateY(-50%);
+  text-align: center;
 }
 
 .info_description {
@@ -345,19 +353,7 @@
   padding-bottom: 10px;
   border-bottom: 1px solid #edc536;
 }
-.inner-title {
-  font-family: 'Avenida Std', serif;
-  font-weight: normal;
-  font-size: 48px;
-  line-height: 28px;
-  letter-spacing: 0.08em;
-  color: #000000;
-  width: 100%;
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
-  text-align: center;
-}
+
 .info_description-text {
   padding: 30px 75px 120px;
   font-weight: 400;
@@ -688,17 +684,14 @@
 /* Get in touch component styles */
 .in_touch {
   position: relative;
-  height: 1086px;
 }
-
 .about_line {
   position: absolute;
   top: -4%;
   left: 0;
 }
-
 .in_touch_img {
-  width: 1440px;
+  width: 100%;
   padding-top: 60px;
 }
 
@@ -709,35 +702,38 @@
   line-height: 64px;
   letter-spacing: 0.15em;
   color: #000000;
+  width: 100%;
+  position: absolute;
+  top: 58%;
+  transform: translateY(-50%);
   text-align: center;
-  position: relative;
-  margin-top: 60px;
   z-index: 5;
 }
-.in_touch_box {
+.in_touch-content {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: space-between;
+ }
+.in_touch_box {
   position: relative;
   height: 585px;
 }
 .in_touch_div {
   position: absolute;
-  height: 595px;
-  left: 5.5%;
-  bottom: 44%;
+  bottom: 22%;
+  left: 1.5%;
   z-index: 1;
+  text-align: right;
 }
 .get_in_touch-text {
-  position: absolute;
-  bottom: 54%;
-  left: 53%;
+  padding-top: 150px;
 }
 .get_in_touch-text p {
   font-weight: normal;
   font-size: 24px;
   line-height: 54px;
   color: #000000;
+  margin-left: 30px;
 }
 
 .get_in_touch-text a {
@@ -749,9 +745,11 @@
   text-decoration: none;
 }
 .get_in_touch-text button {
+  margin: 30px 0 0 30px;
   width: 240px;
   border: 2px solid #edc536;
   background-color: #ffffff;
+  cursor: pointer;
 }
 
 .get_in_touch-button {
