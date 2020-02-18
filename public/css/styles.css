@@ -713,7 +713,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
- }
+}
 .in_touch_box {
   position: relative;
   height: 585px;
@@ -788,3 +788,92 @@
 }
 
 /*End component Partners*/
+
+/* User Profile main part */
+
+.user-image-recatngle {
+  position: relative;
+  width: 230px;
+  height: 230px;
+  background: #edc536;
+  margin-top: 120px;
+  z-index: 1;
+}
+
+.user-image-wrapper {
+  position: relative;
+  z-index: 10;
+  margin-top: -170px;
+  margin-left: 60px;
+}
+
+.user-informText-wrapper {
+  margin-top: 212px;
+  margin-left: 51px;
+}
+
+.send-message-btn {
+  width: 240px;
+  height: 61px;
+  border: 2px solid #edc536;
+  text-align: center;
+  cursor: pointer;
+}
+
+.send-message-btn:hover {
+  background: #edc536;
+}
+
+.send-message-btn a {
+  font-size: 18px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+}
+.send-message-btn a:hover {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+.dots-wrapper {
+  width: 61px;
+  height: 61px;
+  background: #edc536;
+  margin-left: 30px;
+  color: #ffffff;
+  text-align: center;
+  font-size: 30px;
+  border: none;
+  cursor: pointer;
+}
+
+.polygon {
+  width: 0;
+  height: 0;
+  border-left: 20px solid transparent;
+  border-right: 20px solid transparent;
+  border-bottom: 20px solid #f0f7fa;
+
+  margin-left: 282px;
+}
+.dotSittings-rect {
+  width: 247px;
+  height: 82px;
+  background: #ffffff;
+  padding: 20px 15px 20px 15px;
+  margin-left: 267px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.sitting-text {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-left: 10px;
+}
+
+.sitting-text:hover {
+  text-decoration: none;
+  color: #000000;
+}
+/*End User Profile main part */
