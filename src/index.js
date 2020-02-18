@@ -9,13 +9,25 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
+import UserProfileMain from './components/profiles/userProfile/UserProfileMain';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <UserProfileMain
+                isLogged={true}
+                name={'Mary'}
+                surname={'Nersisyan'}
+                recomendations={3}
+              />
+            )}
+          />
           <Route
             path="/*"
             render={() => {
