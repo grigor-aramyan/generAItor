@@ -913,3 +913,79 @@
 
 
 /* Organization Profile End */
+
+/* Organization profile actions start */
+.org-btnsTitle-wrapper{
+  font-family: Avenida Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 36px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  margin-top: 120px;
+}
+
+.links-wrapper{
+
+}
+
+/* .write-feedback-btn-wrapper{
+  width: 240px;
+  height: 61px;
+  border: 2px solid #EDC536;
+  box-sizing: border-box;
+  margin-top: 60px;
+} */
+
+.write-feedback-btn-wrapper, .give-idea-btn-wrapper{
+  width: 240px;
+  height: 61px;
+  border: 2px solid #EDC536;
+  box-sizing: border-box;
+  margin-top: 60px;
+  text-align: center;
+  transition: all ease-in-out 0.5s;
+}
+.write-feedback-btn-wrapper:hover{
+  background: #EDC536;
+  
+  
+}
+.give-idea-btn-wrapper:hover{
+  background: #EDC536;
+}
+
+.or-wrapper{
+font-size: 18px;
+line-height: 21px;
+text-align: center;
+text-transform: lowercase;
+margin-top: 80px;
+margin-left: 30px;
+margin-right: 30px;
+}
+
+.feedback-link, .idea-link{
+  font-size: 18px;
+  line-height: 61px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  
+}
+
+.feedback-link:hover{
+  text-decoration: none;
+  color: #000000;
+
+}
+.idea-link:hover{
+  text-decoration: none;
+  color: #000000;
+}
+
+
+
+/* Organization profile actions end *
