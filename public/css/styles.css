@@ -10,6 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  outline:none;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -306,7 +307,6 @@
 /* Info component styles */
 
 .info {
-  /* <<<<<<< HEAD */
   padding-top: 120px;
   background-image: url(../images/info_bg.png);
   background-position: top right;
@@ -788,6 +788,86 @@
 }
 
 /*End component Partners*/
+
+/* Main Menu */
+.main-menu {
+  width:779px;
+  max-width:100%;
+  margin:150px auto 120px auto;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding:20px 30px 20px 30px;
+}
+.main-menu-items a{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  padding-left:30px;
+}
+.dropdown a span {
+  margin-top:-20px;
+}
+.main-menu-items img {
+  width:32.2px;
+  height:32px;
+  margin-bottom:10px
+}
+.last-item {
+  padding-right:30px;
+}
+.main-menu-items a {
+  font:normal normal 12px Roboto;
+  line-height: 14px;
+  color:#000000;
+}
+.dislike {
+  padding-left:0 !important;
+}
+.like img, .dislike img {
+  width:32.2px;
+  height:32px;
+}
+.btn-secondary{
+  background-color:transparent !important;
+  border:none !important;
+
+}
+.btn-secondary:hover {
+  color:#000000 !important; 
+}
+.btn-secondary:focus {
+  box-shadow:0 0 0 0 !important;
+}
+.dropdown-menu {
+  width:223px !important;
+  height:198px !important;
+}
+.my-drop {
+
+  top:40px !important;
+  border:none !important;
+  border-radius:0 !important;
+  background-color:#ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+}
+.my-drop p{
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 21px;
+  margin:25px 48px 0 49px;
+}
+.my-drop::after {
+    content: ''; 
+    width:20px;
+    height:20px;
+    position: absolute;
+    left: 30px; 
+    top: -31px;
+    border: 10px solid transparent;
+    border-bottom: 20px solid #ffffff;
+}
+/* End Main Menu */
 
 /* User Profile main part */
 
