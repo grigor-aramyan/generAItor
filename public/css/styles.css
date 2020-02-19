@@ -877,3 +877,39 @@
   color: #000000;
 }
 /*End User Profile main part */
+
+/* Organization Profile Start */
+.org_profile {
+  padding: 0 374px;
+}
+.org_profile_img {
+  position: relative;
+  z-index: 10;
+  margin-top: 40px;
+  margin-left: 50px;
+}
+.organization_info-wrapper {
+  margin-left: 120px;
+  padding-top: 170px;
+}
+
+.organization_name {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  padding-right: 60px;
+}
+.organization-add_info {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.followers {
+  padding-right: 30px;
+  margin-bottom: 10px;
+}
+
+
+/* Organization Profile End */

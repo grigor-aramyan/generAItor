@@ -9,7 +9,7 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
-import UserProfileMain from './components/profiles/userProfile/UserProfileMain';
+import OrgProfileMain from './components/profiles/orgProfile/OrgProfileMain';
 
 ReactDOM.render(
   <Provider store={store}>
@@ -20,12 +20,12 @@ ReactDOM.render(
             exact
             path="/"
             component={() => (
-              <UserProfileMain
+              <OrgProfileMain
+                organization="Rostelecom"
+                followers="600"
+                feedbacks="120"
                 isLogged={true}
-                name={'Mary'}
-                surname={'Nersisyan'}
-                recomendations={3}
-              />
+               />
             )}
           />
           <Route
