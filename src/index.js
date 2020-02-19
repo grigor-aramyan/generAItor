@@ -9,13 +9,25 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
+import OrgProfileMain from './components/profiles/orgProfile/OrgProfileMain';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <OrgProfileMain
+                organization="Rostelecom"
+                followers="600"
+                feedbacks="120"
+                isLogged={true}
+               />
+            )}
+          />
           <Route
             path="/*"
             render={() => {
