@@ -66,7 +66,7 @@ class App extends Component {
                     type='number' />
                 <button onClick={this.onIncrementWithNumber}>+</button>
                 <button onClick={this.onDecrementWithNumber}>-</button>
-                <MainMenu />
+                {/* <MainMenu /> */}
             </div>
         );
     }
