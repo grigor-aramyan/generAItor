@@ -1,7 +1,6 @@
 import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
-import MainMenu from './profiles/userProfile/MainMenu';
 
 // actions
 import {
@@ -66,7 +65,6 @@ class App extends Component {
                     type='number' />
                 <button onClick={this.onIncrementWithNumber}>+</button>
                 <button onClick={this.onDecrementWithNumber}>-</button>
-                {/* <MainMenu /> */}
             </div>
         );
     }
