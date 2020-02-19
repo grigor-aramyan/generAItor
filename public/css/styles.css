@@ -800,23 +800,32 @@
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding:20px 30px 20px 30px;
 }
-.main-menu-items {
-  width:130px;
+.main-menu-items a{
   display:flex;
   flex-direction:column;
   align-items:center;
+  padding-left:30px;
+}
+.dropdown a span {
+  margin-top:-20px;
 }
 .main-menu-items img {
   width:32.2px;
   height:32px;
   margin-bottom:10px
 }
+.last-item {
+  padding-right:30px;
+}
 .main-menu-items a {
   font:normal normal 12px Roboto;
   line-height: 14px;
   color:#000000;
 }
-.like, .dislike {
+.dislike {
+  padding-left:0 !important;
+}
+.like img, .dislike img {
   width:32.2px;
   height:32px;
 }
