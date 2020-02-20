@@ -50,7 +50,7 @@ class App extends Component {
 
         return(
             <div>
-                <h1>home page</h1>
+                {/* <h1>home page</h1>
                 <br />
                 <button onClick={this.props.incrementCounter}>+</button>
                 <p>{ counter }</p>
@@ -64,7 +64,8 @@ class App extends Component {
                     id='counter-input'
                     type='number' />
                 <button onClick={this.onIncrementWithNumber}>+</button>
-                <button onClick={this.onDecrementWithNumber}>-</button>
+                <button onClick={this.onDecrementWithNumber}>-</button> */}
+
             </div>
         );
     }
