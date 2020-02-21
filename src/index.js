@@ -12,13 +12,14 @@ import Pricing from './components/pricing/Pricing';
 import OrgProfileMain from './components/profiles/orgProfile/OrgProfileMain';
 import OrgProfileActions from './components/profiles/orgProfile/OrgProfileActions';
 import MainMenu from './components/profiles/MainMenu';
+import AboutProfiles from './components/profiles/AboutProfiles';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={App} />
+          <Route exact path="/" component={AboutProfiles} />
           <Route
             path="/*"
             render={() => {
