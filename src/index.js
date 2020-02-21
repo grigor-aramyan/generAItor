@@ -18,7 +18,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={MainMenu} />
+          <Route exact path="/" component={App} />
           <Route
             path="/*"
             render={() => {
