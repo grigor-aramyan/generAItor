@@ -9,17 +9,16 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
-import OrgProfileMain from './components/profiles/orgProfile/OrgProfileMain';
-import OrgProfileActions from './components/profiles/orgProfile/OrgProfileActions';
 import MainMenu from './components/profiles/MainMenu';
 import AboutProfiles from './components/profiles/AboutProfiles';
+import OrgProfile from './components/profiles/orgProfile/OrgProfile';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={AboutProfiles} />
+          <Route exact path="/" component={OrgProfile} />
           <Route
             path="/*"
             render={() => {
