@@ -9,8 +9,7 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
-import MainMenu from './components/profiles/MainMenu';
-import AboutProfiles from './components/profiles/AboutProfiles';
+import UserProfile from './components/profiles/userProfile/UserProfile';
 import OrgProfile from './components/profiles/orgProfile/OrgProfile';
 
 ReactDOM.render(
@@ -18,7 +17,14 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={OrgProfile} />
+          <Route
+            exact
+            path="/"
+            component={() => (
+              <UserProfile name="Ani" surname="Karapetyan" recomendations={3} />
+            )}
+          />
+          {/* <Route exact path="/" component={OrgProfile} /> */}
           <Route
             path="/*"
             render={() => {
