@@ -16,7 +16,7 @@ export default class OrgProfileActions extends Component {
           <div className="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
             <div className="links-wrapper d-flex">
               <div className="write-feedback-btn-wrapper">
-                <Link to={'/'} className="feedback-link">
+                <Link to="/" className="feedback-link">
                   WRITE FEEDBACK
                 </Link>
               </div>
@@ -24,7 +24,7 @@ export default class OrgProfileActions extends Component {
                 <span>OR</span>
               </div>
               <div className="give-idea-btn-wrapper">
-                <Link to={'/'} className="idea-link">
+                <Link to="/" className="idea-link">
                   GIVE IDEA
                 </Link>
               </div>

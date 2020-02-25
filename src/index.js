@@ -13,13 +13,14 @@ import OrgProfileMain from './components/profiles/orgProfile/OrgProfileMain';
 import OrgProfileActions from './components/profiles/orgProfile/OrgProfileActions';
 import MainMenu from './components/profiles/MainMenu';
 import AboutProfiles from './components/profiles/AboutProfiles';
+import UserProfile from './components/profiles/userProfile/UserProfile'
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={AboutProfiles} />
+          <Route exact path="/" component={UserProfile} />
           <Route
             path="/*"
             render={() => {

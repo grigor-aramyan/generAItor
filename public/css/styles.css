@@ -793,7 +793,7 @@
 .main-menu {
   width:779px;
   max-width:100%;
-  margin:150px auto 120px auto;
+  margin:150px auto 0px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding:20px 30px 20px 30px;
 }
@@ -943,7 +943,10 @@
   background: #ffffff;
   padding: 20px 15px 20px 15px;
   margin-left: 267px;
+  box-sizing: border-box;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+  position: absolute;
+  z-index: 100;
 }
 .sitting-text {
   font-size: 18px;
@@ -1076,10 +1079,13 @@ margin-right: 30px;
   
 }
 .about-prof {
-  width:100%;
+  width:1320px;
   height:264px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding:60px 101px 60px 102px;
+  margin: 120px auto;
+  position: relative;
+  z-index: 1;
 }
 .about-prof h2 {
   font-family: Avenida Std;
@@ -1098,6 +1104,6 @@ margin-right: 30px;
   font-weight: normal;
   font-size: 18px;
   line-height: 31px;
-  text-align: justify;
+  text-align: center;
 }
 /* End About Profiles  */
