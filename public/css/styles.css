@@ -10,7 +10,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  outline:none;
+  outline: none;
   font-family: 'Roboto', sans-serif;
 }
 
@@ -791,81 +791,79 @@
 
 /* Main Menu */
 .main-menu {
-  width:779px;
-  max-width:100%;
-  margin:150px auto 0px auto;
+  width: 779px;
+  margin: 150px auto 0px auto;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding:20px 30px 20px 30px;
-}
-.main-menu-items a{
-  display:flex;
-  flex-direction:column;
-  align-items:center;
-  padding-left:30px;
-}
-.dropdown a span {
-  margin-top:-20px;
-}
-.main-menu-items img {
-  width:32.2px;
-  height:32px;
-  margin-bottom:10px
-}
-.last-item {
-  padding-right:30px;
+  padding: 20px 30px 20px 30px;
 }
 .main-menu-items a {
-  font:normal normal 12px Roboto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-left: 30px;
+}
+.dropdown a span {
+  margin-top: -20px;
+}
+.main-menu-items img {
+  width: 32.2px;
+  height: 32px;
+  margin-bottom: 10px;
+}
+.last-item {
+  padding-right: 30px;
+}
+.main-menu-items a {
+  font: normal normal 12px Roboto;
   line-height: 14px;
-  color:#000000;
+  color: #000000;
 }
 .dislike {
-  padding-left:0 !important;
+  padding-left: 0 !important;
 }
-.like img, .dislike img {
-  width:32.2px;
-  height:32px;
+.like img,
+.dislike img {
+  width: 32.2px;
+  height: 32px;
 }
-.btn-secondary{
-  background-color:transparent !important;
-  border:none !important;
-
+.btn-secondary {
+  background-color: transparent !important;
+  border: none !important;
 }
 .btn-secondary:hover {
-  color:#000000 !important; 
+  color: #000000 !important;
 }
 .btn-secondary:focus {
-  box-shadow:0 0 0 0 !important;
+  box-shadow: 0 0 0 0 !important;
 }
 .dropdown-menu {
-  width:223px !important;
-  height:198px !important;
+  width: 223px !important;
+  height: 198px !important;
 }
 .my-drop {
-
-  top:40px !important;
-  border:none !important;
-  border-radius:0 !important;
-  background-color:#ffffff;
+  top: 40px !important;
+  border: none !important;
+  border-radius: 0 !important;
+  background-color: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
 }
-.my-drop p{
+.my-drop p {
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
   font-size: 18px;
   line-height: 21px;
-  margin:25px 48px 0 49px;
+  margin: 25px 48px 0 49px;
 }
 .my-drop::after {
-    content: ''; 
-    width:20px;
-    height:20px;
-    position: absolute;
-    left: 30px; 
-    top: -31px;
-    border: 10px solid transparent;
-    border-bottom: 20px solid #ffffff;
+  content: '';
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  left: 30px;
+  top: -31px;
+  border: 10px solid transparent;
+  border-bottom: 20px solid #ffffff;
 }
 /* End Main Menu */
 
@@ -891,6 +889,13 @@
   margin-top: 212px;
   margin-left: 51px;
 }
+.user-name-surname {
+  font-size: 48px;
+  line-height: 56px;
+  letter-spacing: 0.05em;
+  color: #000000;
+  white-space: nowrap;
+}
 
 .send-message-btn {
   width: 240px;
@@ -902,6 +907,7 @@
 
 .send-message-btn:hover {
   background: #edc536;
+  transition: all 0.5s;
 }
 
 .send-message-btn a {
@@ -913,7 +919,7 @@
 }
 .send-message-btn a:hover {
   text-decoration: none;
-  color: #ffffff;
+  color: #000000;
 }
 
 .dots-wrapper {
@@ -963,7 +969,7 @@
 
 /* Organization Profile Start */
 .org_profile {
-  padding: 0 374px;
+  padding: 50px 374px 180px;
 }
 .org_profile_img {
   position: relative;
@@ -994,12 +1000,11 @@
   margin-bottom: 10px;
 }
 
-
 /* Organization Profile End */
 
 /* Organization profile actions start */
-.org-btnsTitle-wrapper{
-  font-family: Avenida Std;
+.org-btnsTitle-wrapper h1 {
+  font-family: 'Avenida Std';
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1007,12 +1012,12 @@
   text-align: center;
   letter-spacing: 0.08em;
   text-transform: uppercase;
-  margin-top: 120px;
+  /* margin-top: 120px; */
 }
 
-.links-wrapper{
+/* .links-wrapper{
 
-}
+} */
 
 /* .write-feedback-btn-wrapper{
   width: 240px;
@@ -1022,49 +1027,47 @@
   margin-top: 60px;
 } */
 
-.write-feedback-btn-wrapper, .give-idea-btn-wrapper{
+.write-feedback-btn-wrapper,
+.give-idea-btn-wrapper {
   width: 240px;
   height: 61px;
-  border: 2px solid #EDC536;
+  border: 2px solid #edc536;
   box-sizing: border-box;
-  margin-top: 60px;
+  margin: 60px 0 120px;
   text-align: center;
   transition: all ease-in-out 0.5s;
 }
-.write-feedback-btn-wrapper:hover{
-  background: #EDC536;
-  
-  
+.write-feedback-btn-wrapper:hover {
+  background: #edc536;
 }
-.give-idea-btn-wrapper:hover{
-  background: #EDC536;
+.give-idea-btn-wrapper:hover {
+  background: #edc536;
 }
 
-.or-wrapper{
-font-size: 18px;
-line-height: 21px;
-text-align: center;
-text-transform: lowercase;
-margin-top: 80px;
-margin-left: 30px;
-margin-right: 30px;
+.or-wrapper {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: lowercase;
+  margin-top: 80px;
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
-.feedback-link, .idea-link{
+.feedback-link,
+.idea-link {
   font-size: 18px;
   line-height: 61px;
   text-align: center;
   text-transform: uppercase;
   color: #000000;
-  
 }
 
-.feedback-link:hover{
+.feedback-link:hover {
   text-decoration: none;
   color: #000000;
-
 }
-.idea-link:hover{
+.idea-link:hover {
   text-decoration: none;
   color: #000000;
 }
@@ -1074,21 +1077,21 @@ margin-right: 30px;
 
 /* About Profiles  */
 .profiles-about {
-  padding-left:60px;
-  padding-right:60px;
-  
+  padding-left: 60px;
+  padding-right: 60px;
+  margin-bottom: 120px;
 }
 .about-prof {
-  width:1320px;
-  height:264px;
+  width: 1320px;
+  height: 264px;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  padding:60px 101px 60px 102px;
+  padding: 60px 101px 60px 102px;
   margin: 120px auto;
   position: relative;
   z-index: 1;
 }
 .about-prof h2 {
-  font-family: Avenida Std;
+  font-family: 'Avenida Std';
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1098,7 +1101,7 @@ margin-right: 30px;
   text-transform: uppercase;
 }
 .about-prof p {
-  margin-top:30px;
+  margin-top: 30px;
   font-family: Roboto;
   font-style: normal;
   font-weight: normal;
