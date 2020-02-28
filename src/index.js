@@ -11,19 +11,14 @@ import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
 import UserProfile from './components/profiles/userProfile/UserProfile';
 import OrgProfile from './components/profiles/orgProfile/OrgProfile';
+import GiveFeedbacksMain from './components/giveFeedbacks/giveFeedbacksMain';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route
-            exact
-            path="/"
-            component={() => (
-              <UserProfile name="Ani" surname="Karapetyan" recomendations={3} />
-            )}
-          />
+          <Route exact path="/" component={GiveFeedbacksMain} />
           {/* <Route exact path="/" component={OrgProfile} /> */}
           <Route
             path="/*"
