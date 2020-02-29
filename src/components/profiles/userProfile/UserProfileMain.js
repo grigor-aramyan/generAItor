@@ -6,7 +6,7 @@ export default class UserProfileMain extends Component {
   constructor() {
     super();
     this.state = {
-      showdotSitings: true
+      showdotSitings: false
     };
   }
 
@@ -27,7 +27,7 @@ export default class UserProfileMain extends Component {
           </div>
           <div className="user-informText-wrapper">
             <div className="userName">
-              <h1>
+              <h1 className="user-name-surname">
                 {name} {surname}
               </h1>
             </div>
