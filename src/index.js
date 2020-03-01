@@ -11,6 +11,7 @@ import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
 import UserProfile from './components/profiles/userProfile/UserProfile';
 import OrgProfile from './components/profiles/orgProfile/OrgProfile';
+import GiveIdeas from './components/giveIdeas/GiveIdeas';
 import GiveFeedbacksMain from './components/giveFeedbacks/giveFeedbacksMain';
 
 ReactDOM.render(
@@ -18,8 +19,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={GiveFeedbacksMain} />
-          {/* <Route exact path="/" component={OrgProfile} /> */}
+          <Route exact path="/" component={GiveIdeas} />
           <Route
             path="/*"
             render={() => {
