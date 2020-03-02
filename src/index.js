@@ -9,10 +9,11 @@ import App from './components/App';
 import AboutUsPage from './components/aboutUs/AboutUsPage';
 import Homepage from './components/homepage/Homepage';
 import Pricing from './components/pricing/Pricing';
-import MainMenu from './components/profiles/MainMenu';
-import AboutProfiles from './components/profiles/AboutProfiles';
+import UserProfile from './components/profiles/userProfile/UserProfile';
 import OrgProfile from './components/profiles/orgProfile/OrgProfile';
 import IdeasMain from './components/GetIdea/IdeasMain';
+import GiveIdeas from './components/giveIdeas/GiveIdeas';
+import GiveFeedbacksMain from './components/giveFeedbacks/giveFeedbacksMain';
 
 ReactDOM.render(
   <Provider store={store}>
