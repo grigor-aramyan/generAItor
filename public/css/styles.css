@@ -1106,8 +1106,8 @@ margin-right: 30px;
 
 /* Get Ideas Second Part Start */
 .getIdea_main {
-  padding-left: 40px;
-  padding-right: 40px;
+  padding-left: 35px;
+  padding-right: 35px;
 }
 .getIdea_box {
   width: 640px;
@@ -1153,11 +1153,16 @@ margin-right: 30px;
 }
 .getIdea_pagination-item {
   color: #EDC536;
-  
+  padding: 3px;
+}
+.getIdea_pagination-item.active {
+  color: #EDC536;
+  font-weight: bold;
 }
 .getIdea_pagination-item:hover {
   text-decoration: none;
   color: #EDC536;
+  background-color: rgb(240, 240, 226);
   
 }
 
