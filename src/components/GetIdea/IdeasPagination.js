@@ -77,7 +77,7 @@ export default class IdeasPagination extends Component {
         const renderIdeas = currentIdeas
             .filter(item => item.id)
             .map((item, index) => {
-            return <IdeasCard ideas={item} />
+            return <IdeasCard ideas={item} key={index} />
         })
 
         const pageNumbers = [];
