@@ -1535,3 +1535,67 @@
 }
 
 /* End Give Ideas */
+
+/* Get Ideas Second Part Start */
+.getIdea_main {
+  padding-left: 35px;
+  padding-right: 35px;
+}
+.getIdea_box {
+  width: 640px;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+.getIdea-title {
+  margin: 120px 0px;
+}
+.getIdea-title h2 {
+  font-family: 'Avenida Std';
+  font-size: 48px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #000000;
+}
+.getIdea_inner {
+  margin: 60px 30px 0px 60px;
+}
+.getIdea_name {
+  padding: 0px 30px;
+}
+.getIdea_inner-content {
+  font-size: 18px;
+  font-weight: normal;
+  line-height: 31px;
+  text-align: justify;
+  color: #000000;
+  padding: 30px 60px;
+}
+.getIdea_arrow {
+  text-align: end;
+  margin-bottom: 20px;
+}
+.getIdea_pagination {
+  font-size: 24px;
+  line-height: 31px;
+  letter-spacing: 0.14em;
+  color: #EDC536;
+  margin: 80px 0px 100px;
+}
+.getIdea_pagination-item {
+  color: #EDC536;
+  padding: 3px;
+}
+.getIdea_pagination-item.active {
+  color: #EDC536;
+  font-weight: bold;
+}
+.getIdea_pagination-item:hover {
+  text-decoration: none;
+  color: #EDC536;
+  background-color: rgb(240, 240, 226);
+  
+}
+
+/* Get Ideas Second Part End */
