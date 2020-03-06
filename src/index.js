@@ -13,15 +13,14 @@ import UserProfile from './components/profiles/userProfile/UserProfile';
 import OrgProfile from './components/profiles/orgProfile/OrgProfile';
 import IdeasMain from './components/GetIdea/IdeasMain';
 import GiveIdeas from './components/giveIdeas/GiveIdeas';
-import GiveFeedbacksMain from './components/giveFeedbacks/giveFeedbacksMain';
-import GetIdeas from './components/GetIdea/GetIdea';
+import GiveFeedbacksMain from './components/giveFeedbacks/GiveFeedbacksMain';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={GetIdeas} />
+          <Route exact path="/" component={GiveFeedbacksMain} />
           <Route
             path="/*"
             render={() => {
