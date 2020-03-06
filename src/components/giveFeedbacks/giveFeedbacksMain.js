@@ -4,23 +4,15 @@ export default class GiveFeedbacksMain extends Component {
   constructor() {
     super();
     this.state = {
+      orgName: '',
+      address: '',
+      feedbackTextarea: '',
       keywords: [],
+      tempKeywords: [],
       selectedBtn: 'Good',
       aboutLink: 'AboutCustomerService'
     };
   }
-
-  getKeyWords = e => {
-    const word = e.target.value
-      .replace(/,|;/g, '')
-      .trim()
-      .split(' ')
-      .filter(m => m !== '');
-
-    this.setState({
-      keywords: word
-    });
-  };
   selectBtn = e => {
     this.setState({ selectedBtn: e.target.innerHTML });
   };
@@ -28,15 +20,27 @@ export default class GiveFeedbacksMain extends Component {
   handleChange = e => {
     this.setState({ [e.target.name]: e.target.value });
   };
-  hello = () => {
-    console.log(this.state);
+
+  setTempKeywords = e => {
+    const word = e.target.value
+      .replace(/,|;/g, '')
+      .trim()
+      .split(' ')
+      .filter(m => m !== '');
+    this.setState({ tempKeywords: word });
   };
+
+  setKeywords = () => {
+    if (event.keyCode === 13) {
+      this.setState({ keywords: this.state.tempKeywords });
+    }
+  };
+
   render() {
     const { keywords, selectedBtn, aboutLink } = this.state;
     return (
       <div className="container-fluid">
         <div className="row">
-          <button onClick={this.hello}>Hello</button>
           <div className="col-10 offset-1 col-lg-8 offset-lg-2  d-flex justify-content-center align-items-center">
             <form
               action="/giveFedback"
@@ -63,29 +67,31 @@ export default class GiveFeedbacksMain extends Component {
               </ul>
               <div className="links-wrapper">
                 <a
-                  href="#"
+                  href=""
                   className={
                     aboutLink === 'AboutProductServices'
                       ? 'about-links yellow'
                       : 'about-links'
                   }
-                  onClick={() =>
-                    this.setState({ aboutLink: 'AboutProductServices' })
-                  }
+                  onClick={e => {
+                    e.preventDefault();
+                    return this.setState({ aboutLink: 'AboutProductServices' });
+                  }}
                 >
                   About Product / Services
                 </a>
                 <span className="or">or</span>
                 <a
-                  href="#"
+                  href=""
                   className={
                     aboutLink === 'AboutCustomerService'
                       ? 'about-links yellow'
                       : 'about-links'
                   }
-                  onClick={() =>
-                    this.setState({ aboutLink: 'AboutCustomerService' })
-                  }
+                  onClick={e => {
+                    e.preventDefault();
+                    return this.setState({ aboutLink: 'AboutCustomerService' });
+                  }}
                 >
                   About Customer Service
                 </a>
@@ -110,8 +116,8 @@ export default class GiveFeedbacksMain extends Component {
               <textarea
                 name="feedbackTextarea"
                 id=""
-                cols="30"
-                rows="10"
+                cols="65"
+                rows="5"
                 className="feedbackTextarea"
                 onChange={this.handleChange}
               ></textarea>
@@ -121,19 +127,22 @@ export default class GiveFeedbacksMain extends Component {
 
               <input
                 type="text"
-                name="keyfords"
+                name="keywords"
                 className="keywords-input"
-                onChange={this.getKeyWords}
+                onChange={this.setTempKeywords}
+                onKeyPress={this.setKeywords}
               />
 
               <div className="keywords-wrapper">
-                {keywords.map((e, i) => {
-                  return (
-                    <div className="keyword" key={i}>
-                      <p className="keyword-text">{e}</p>
-                    </div>
-                  );
-                })}
+                {keywords.length
+                  ? keywords.map((e, i) => {
+                      return (
+                        <div className="my-keyword" key={i}>
+                          <p className="keyword-text">{e}</p>
+                        </div>
+                      );
+                    })
+                  : null}
               </div>
               <div className="buttons-wrapper">
                 <button
