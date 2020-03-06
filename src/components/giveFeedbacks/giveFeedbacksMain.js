@@ -8,7 +8,7 @@ export default class GiveFeedbacksMain extends Component {
       address: '',
       feedbackTextarea: '',
       keywords: [],
-      tempKeywords: [],
+      tempKeywords: '',
       selectedBtn: 'Good',
       aboutLink: 'AboutCustomerService'
     };
@@ -32,12 +32,18 @@ export default class GiveFeedbacksMain extends Component {
 
   setKeywords = () => {
     if (event.keyCode === 13) {
-      this.setState({ keywords: this.state.tempKeywords });
+      let oldKeywords = this.state.keywords;
+      oldKeywords.push(this.state.tempKeywords);
+
+      this.setState({
+        keywords: oldKeywords,
+        tempKeywords: ''
+      });
     }
   };
 
   render() {
-    const { keywords, selectedBtn, aboutLink } = this.state;
+    const { keywords, selectedBtn, aboutLink, tempKeywords } = this.state;
     return (
       <div className="container-fluid">
         <div className="row">
@@ -128,6 +134,7 @@ export default class GiveFeedbacksMain extends Component {
               <input
                 type="text"
                 name="keywords"
+                value={tempKeywords}
                 className="keywords-input"
                 onChange={this.setTempKeywords}
                 onKeyPress={this.setKeywords}
