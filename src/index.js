@@ -20,7 +20,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={IdeasMain} />
+          <Route exact path="/" component={GiveFeedbacksMain} />
           <Route
             path="/*"
             render={() => {

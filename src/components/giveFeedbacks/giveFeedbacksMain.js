@@ -33,7 +33,6 @@ export default class GiveFeedbacksMain extends Component {
   setKeywords = () => {
     if (event.keyCode === 13) {
       this.setState({ keywords: this.state.tempKeywords });
-      console.log(this.state);
     }
   };
 
@@ -117,7 +116,7 @@ export default class GiveFeedbacksMain extends Component {
               <textarea
                 name="feedbackTextarea"
                 id=""
-                cols="75"
+                cols="65"
                 rows="5"
                 className="feedbackTextarea"
                 onChange={this.handleChange}
@@ -138,7 +137,7 @@ export default class GiveFeedbacksMain extends Component {
                 {keywords.length
                   ? keywords.map((e, i) => {
                       return (
-                        <div className="keyword" key={i}>
+                        <div className="my-keyword" key={i}>
                           <p className="keyword-text">{e}</p>
                         </div>
                       );
