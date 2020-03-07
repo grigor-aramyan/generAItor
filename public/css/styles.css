@@ -1517,6 +1517,72 @@
 
 /* End Give Ideas */
 
+/* Get Ideas First Part Start */
+
+.enter_field-title {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  padding-bottom: 30px;
+}
+.enter_field-wrapper {
+  /* margin: 30px auto; */
+  text-align: center;
+}
+
+.title-star {
+  font-weight: normal;
+  font-size: 24px;
+  line-height: 28px;
+  color: #ef0d0d;
+}
+.enter-field-input {
+  width: 661px;
+  height: 101px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  border: none;
+  padding-left: 60px;
+}
+.ideas-list-item {
+  background: #e8e8e8;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  list-style-type: none;
+  padding: 17px 30px;
+  cursor: pointer;
+  text-align: left;
+}
+.keywords-box {
+  margin-top: 22px;
+}
+.keyword-items {
+  width: 661px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-items: start;
+}
+.keyword-item {
+  font-size: 18px;
+  padding: 20px;
+  margin-left: 0!important;
+  text-align: center;
+  color: #000000;
+  background: #edc536;
+  cursor: pointer;
+  margin: 0.5rem;
+}
+.confirm-button:hover {
+  background: #edc536;
+  transition: all .3s;
+}
+
+/* Get Ideas Part One End */
+
 /* Get Ideas Second Part Start */
 .getIdea_main {
   padding-left: 35px;
@@ -1529,7 +1595,7 @@
   margin-bottom: 60px;
 }
 .getIdea-title {
-  margin: 120px 0px;
+  margin: 120px auto;
 }
 .getIdea-title h2 {
   font-family: 'Avenida Std';

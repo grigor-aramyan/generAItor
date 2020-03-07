@@ -1,8 +1,8 @@
 export const ideas = [
-    { id: 1, author_image: "images/get_idea_img.jpg", author_name: "Name1", idea_content: "Lorem ipsum dolor sit amet" },
-    { id: 2, author_image: "images/get_idea_img.jpg", author_name: "Name2", idea_content: "Lorem ipsum dolor sit amet" },
-    { id: 3, author_image: "images/get_idea_img.jpg", author_name: "Name3", idea_content: "Lorem ipsum dolor sit amet" },
-    { id: 4, author_image: "images/get_idea_img.jpg", author_name: "Name4", idea_content: "Lorem ipsum dolor sit amet" },
+    { id: 1, author_image: "images/get_idea_img.jpg", author_name: "Name1", idea_content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. " },
+    { id: 2, author_image: "images/get_idea_img.jpg", author_name: "Name2", idea_content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. " },
+    { id: 3, author_image: "images/get_idea_img.jpg", author_name: "Name3", idea_content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. " },
+    { id: 4, author_image: "images/get_idea_img.jpg", author_name: "Name4", idea_content: "Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet. " },
     { id: 5, author_image: "images/get_idea_img.jpg", author_name: "Name5", idea_content: "Lorem ipsum dolor sit amet" },
     { id: 6, author_image: "images/get_idea_img.jpg", author_name: "Name6", idea_content: "Lorem ipsum dolor sit amet" },
     { id: 7, author_image: "images/get_idea_img.jpg", author_name: "Name7", idea_content: "Lorem ipsum dolor sit amet" },
