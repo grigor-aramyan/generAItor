@@ -42,8 +42,7 @@ export default class GetIdeas extends Component {
                         <h2>Get Ideas</h2>
                     </div>
                     <form
-                        action="/getIdea"
-                        method="POST">
+                        onSubmit={(e) => e.preventDefault()}>
 
                         <div className="enter_field-wrapper">
                             <h4 className="enter_field-title">Enter the Field <span className="title-star">&#42;</span></h4>
@@ -74,7 +73,7 @@ export default class GetIdeas extends Component {
                                     ? keywords.map((el, i) => {
                                         return (
                                             <div className="keyword-items" key={i}>
-                                                <span className="keyword-item">Telecomunication{el}</span>
+                                                <span className="keyword-item">{el}</span>
                                             </div>
                                         )
                                     })

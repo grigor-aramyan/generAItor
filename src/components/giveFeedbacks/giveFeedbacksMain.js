@@ -49,8 +49,7 @@ export default class GiveFeedbacksMain extends Component {
         <div className="row">
           <div className="col-10 offset-1 col-lg-8 offset-lg-2  d-flex justify-content-center align-items-center">
             <form
-              action="/giveFedback"
-              method="POST"
+              onSubmit={(e) => e.preventDefault()}
               className="give-feedbacks-form-wrapper"
             >
               <div className="feedback-title-wrapper">
