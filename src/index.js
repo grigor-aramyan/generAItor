@@ -15,13 +15,14 @@ import IdeasMain from './components/GetIdea/IdeasMain';
 import GiveIdeas from './components/giveIdeas/GiveIdeas';
 import GiveFeedbacksMain from './components/giveFeedbacks/GiveFeedbacksMain';
 import GetIdeas from './components/GetIdea/GetIdea';
+import ProfileClick from './components/ProfileClick/ProfileClick';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={GetIdeas} />
+          <Route exact path="/" component={ProfileClick} />
           <Route
             path="/*"
             render={() => {
