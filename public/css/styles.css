@@ -1645,3 +1645,36 @@
 }
 
 /* Get Ideas Second Part End */
+
+/* Profile Click Start */
+
+.profileClick {
+  width: 1440px;
+  height: 706px;
+  background: rgba(0, 0, 0, 0.8);
+}
+.profileClick_logo {
+  margin: 20px 45px;
+}
+.profileClickButtons {
+  height: 460px;
+}
+.profileButtons-wrapper {
+  padding: 0 135px;
+}
+.profileButton {
+  width: 240px;
+  font-size: 18px;
+  line-height: 21px;
+  color: #ffffff;
+  padding: 20px;
+  cursor: pointer;
+  border: 2px solid #EDC536;
+  box-sizing: border-box;
+  background: none;
+}
+.profileClickButtons button:hover {
+  background: #edc536;
+  transition: all .3s;
+} 
+/* Profile Click End */
