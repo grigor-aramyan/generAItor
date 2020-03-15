@@ -15,14 +15,15 @@ import IdeasMain from './components/GetIdea/IdeasMain';
 import GiveIdeas from './components/giveIdeas/GiveIdeas';
 import GiveFeedbacksMain from './components/giveFeedbacks/GiveFeedbacksMain';
 import GetIdeas from './components/GetIdea/GetIdea';
-import ProfileClick from './components/ProfileClick/ProfileClick';
+import ProfileClick from './components/profileClick/ProfileClick';
+import SignInPage from './components/signInPage/signInPage';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={ProfileClick} />
+          <Route exact path="/" component={SignInPage} />
           <Route
             path="/*"
             render={() => {
