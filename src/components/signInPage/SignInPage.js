@@ -1,6 +1,12 @@
 import React, { Component } from 'react';
+import { connect } from 'react-redux';
+import PropTypes from 'prop-types';
+import {
+    loginUser,
+    logoutUser
+} from '../../actions/userActions';
 
-export default class SignInPage extends Component {
+class SignInPage extends Component {
     constructor() {
         super()
         this.state = {
@@ -16,7 +22,10 @@ export default class SignInPage extends Component {
         })
     }
     // will be added later
-    onButtonClick = () => {}
+    onButtonClick = () => {
+        //this.props.loginUser('brig9@example.com', '12345678');
+        this.props.logoutUser();
+    }
 
     render() {
         const { emailValue, pswValue } = this.state;
@@ -64,3 +73,18 @@ export default class SignInPage extends Component {
         )
     }
 }
+
+SignInPage.propTypes = {
+    logoutUser: PropTypes.func.isRequired,
+    loginUser: PropTypes.func.isRequired,
+    isAuthenticated: PropTypes.bool.isRequired
+}
+
+const mapStateToProps = (state) => ({
+    isAuthenticated: state.user.isAuthenticated
+});
+
+export default connect(mapStateToProps, {
+    loginUser,
+    logoutUser
+})(SignInPage);

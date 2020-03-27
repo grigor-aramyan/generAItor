@@ -6,7 +6,8 @@ import {
     SIGN_UP,
     SIGN_UP_FAILED,
     GET_PROFILE_DATA,
-    GET_PROFILE_DATA_FAILED
+    GET_PROFILE_DATA_FAILED,
+    LOAD_LOCAL_TOKEN
 } from '../actions/types';
 
 const initialState = {
@@ -61,6 +62,11 @@ export default function(state = initialState, action) {
             }
         case GET_PROFILE_DATA_FAILED:
             return state;
+        case LOAD_LOCAL_TOKEN:
+            return {
+                ...state,
+                token: action.payload.token
+            };
         default:
             return state;
     }
