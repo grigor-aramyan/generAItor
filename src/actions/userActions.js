@@ -14,6 +14,38 @@ import {
 
 // Constants
 export const BASE_URI = 'https://intense-temple-11495.herokuapp.com';
+// export const BASE_URI = 'http://localhost:3000';
+
+export const signUpUser = (userData) => (dispatch, getState) => {
+    const uri = `${BASE_URI}/users`;
+
+    axios.post(uri, userData, tokenConfig(getState))
+        .then(res => {
+            const authToken = res.headers.authorization;
+
+            if (authToken) {
+                dispatch({
+                    type: SIGN_UP,
+                    token: authToken
+                });
+            } else {
+                dispatch({
+                    type: SIGN_UP_FAILED
+                });
+                dispatch(
+                    returnErrors('Registration failed', '400', SIGN_UP_FAILED)
+                );
+            }
+        })
+        .catch(err => {
+            dispatch({
+                type: SIGN_UP_FAILED
+            });
+            dispatch(
+                returnErrors(err.response.data, err.response.status, SIGN_UP_FAILED)
+            );
+        });
+}
 
 export const logoutUser = () => (dispatch, getState) => {
     const uri = `${BASE_URI}/users/sign_out`;

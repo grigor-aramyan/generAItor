@@ -3,7 +3,8 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
     loginUser,
-    logoutUser
+    logoutUser,
+    signUpUser
 } from '../../actions/userActions';
 
 class SignInPage extends Component {
@@ -24,7 +25,23 @@ class SignInPage extends Component {
     // will be added later
     onButtonClick = () => {
         //this.props.loginUser('brig9@example.com', '12345678');
-        this.props.logoutUser();
+        //this.props.logoutUser();
+
+        const body = {
+            user: {
+                email: 'brig12@example.com',
+                password: '12345678',
+                password_confirmation: '12345678',
+                accountable_type: 'IdeaGeneraitor',
+                idea_generaitor: {
+                    full_name: 'Nancy Nersesyan',
+                    avatar_uri: 'some avatar uri of Nance',
+                    description: 'it\'s my short bio)'
+                }
+            }
+        }
+
+        this.props.signUpUser(body);
     }
 
     render() {
@@ -77,6 +94,7 @@ class SignInPage extends Component {
 SignInPage.propTypes = {
     logoutUser: PropTypes.func.isRequired,
     loginUser: PropTypes.func.isRequired,
+    signUpUser: PropTypes.func.isRequired,
     isAuthenticated: PropTypes.bool.isRequired
 }
 
@@ -86,5 +104,6 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, {
     loginUser,
-    logoutUser
+    logoutUser,
+    signUpUser
 })(SignInPage);
