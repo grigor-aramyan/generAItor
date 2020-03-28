@@ -45,8 +45,8 @@ export default function(state = initialState, action) {
         case SIGN_OUT_FAILED:
             return state;
         case GET_PROFILE_DATA:
-            profileType = action.payload.user.profile_type;
-
+            const profileType = action.payload.user.profile_type;
+            
             if (profileType == 'Organization') {
                 return {
                     ...state,

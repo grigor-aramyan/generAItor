@@ -23,7 +23,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={SignUp} />
+          <Route exact path="/" component={OrgProfile} />
           <Route path="/signin" component={SignInPage} />
           <Route
             path="/*"

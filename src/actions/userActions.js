@@ -16,8 +16,8 @@ import {
 export const BASE_URI = 'https://intense-temple-11495.herokuapp.com';
 // export const BASE_URI = 'http://localhost:3000';
 
-export const getProfileData = () => (dispatch, getState) => {
-    const uri = `${BASE_URI}/profiles/show`;
+export const getProfileData = (id) => (dispatch, getState) => {
+    const uri = `${BASE_URI}/profiles/show/${id}`;
 
     axios.get(uri, tokenConfig(getState))
         .then(res => {
@@ -25,7 +25,7 @@ export const getProfileData = () => (dispatch, getState) => {
                 dispatch({
                     type: GET_PROFILE_DATA,
                     payload: res.data.data
-                })
+                });
             } else {
                 dispatch({
                     type: GET_PROFILE_DATA_FAILED
