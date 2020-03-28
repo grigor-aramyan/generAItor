@@ -14,7 +14,7 @@ export default class UserProfileMain extends Component {
     this.setState({ showdotSitings: !this.state.showdotSitings });
   };
   render() {
-    const { name, surname, recomendations, isLogged } = this.props;
+    const { fullName, recomendations, isLogged } = this.props;
 
     return (
       <div className="container">
@@ -28,7 +28,7 @@ export default class UserProfileMain extends Component {
           <div className="user-informText-wrapper">
             <div className="userName">
               <h1 className="user-name-surname">
-                {name} {surname}
+                {fullName}
               </h1>
             </div>
             <div className="recomendations">
@@ -70,8 +70,7 @@ export default class UserProfileMain extends Component {
 }
 
 UserProfileMain.propTypes = {
-  name: PropTypes.string.isRequired,
-  surname: PropTypes.string.isRequired,
+  fullName: PropTypes.string.isRequired,
   recomendations: PropTypes.number.isRequired,
   isLogged: PropTypes.bool.isRequired
 };

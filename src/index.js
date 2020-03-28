@@ -18,12 +18,13 @@ import GetIdeas from './components/GetIdea/GetIdea';
 import ProfileClick from './components/profileClick/ProfileClick';
 import SignInPage from './components/signInPage/signInPage';
 import SignUp from './components/signup/SignUp';
+
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={OrgProfile} />
+          <Route exact path="/" component={UserProfile} />
           <Route path="/signin" component={SignInPage} />
           <Route
             path="/*"
