@@ -21,6 +21,14 @@
   margin-top: 0.5em;
 }
 
+.local_err_msg_centered {
+  display: block;
+  color: aqua;
+  font-style: italic;
+  margin-top: 0.5em;
+  text-align: center;
+}
+
 /* Header */
 
 .header {
