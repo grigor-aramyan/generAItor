@@ -2,30 +2,53 @@ import React, { Component } from 'react';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
-    loginUser,
-    logoutUser,
-    signUpUser,
-    getProfileData
+    loginUser
 } from '../../actions/userActions';
 
 class SignInPage extends Component {
     constructor() {
         super()
         this.state = {
-            emailValue: 'EMAIL',
-            pswValue: ' PASSWORD'
+            emailValue: '',
+            pswValue: '',
+            errorMsg: ''
         }
     }
 
-    handleChange = (e) => {
-        this.setState({
-            emailValue: e.target.value,
-            pswValue: e.target.value
-        })
-    }
-    // will be added later
+    handleChange = e => {
+        this.setState({ [e.target.name]: e.target.value });
+    };
+    
     onButtonClick = () => {
-        // this.props.loginUser('brig9@example.com', '12345678');
+        const {
+            emailValue,
+            pswValue
+        } = this.state;
+
+        if (!emailValue) {
+            this.setState({
+                errorMsg: 'Email required!'
+            });
+        } else if (!pswValue) {
+            this.setState({
+                errorMsg: 'Password required!'
+            });
+        } else if (pswValue.length < 8) {
+            this.setState({
+                errorMsg: 'Password should contain at least 8 symbols'
+            });
+        } else if (!(/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(emailValue))) {
+            this.setState({
+                errorMsg: 'Email format looks invalid'
+            });
+        } else {
+            this.setState({
+                errorMsg: ''
+            });
+
+            this.props.loginUser(emailValue, pswValue);
+        }
+        
         //this.props.logoutUser();
 
         // const body = {
@@ -42,12 +65,14 @@ class SignInPage extends Component {
         //     }
         // }
 
-        this.props.getProfileData();
+        // this.props.getProfileData();
         //this.props.signUpUser(body);
     }
 
     render() {
-        const { emailValue, pswValue } = this.state;
+        
+        const { emailValue, pswValue, errorMsg } = this.state;
+
         return (
             <div className="container-fluid profileClick">
                 <div className="row">
@@ -68,11 +93,15 @@ class SignInPage extends Component {
 
                             <input type="email"
                                 className="signIn_input"
+                                placeholder='Email...'
                                 value={emailValue}
+                                name='emailValue'
                                 onChange={this.handleChange} />
                             <input type="password"
                                 className="signIn_input"
+                                placeholder='Password...'
                                 value={pswValue}
+                                name='pswValue'
                                 onChange={this.handleChange} />
                         </form>
                         <div className="account_recover">
@@ -83,6 +112,12 @@ class SignInPage extends Component {
                             className="profileButton">
                             SIGN IN
                         </button>
+                        { errorMsg ?
+                            <span className='local_err_msg'>
+                                { errorMsg }
+                            </span>
+                        : null
+                        }
                         <div className="account_recover">
                             <a href="#">Don't have an account?</a>
                         </div>
@@ -94,20 +129,16 @@ class SignInPage extends Component {
 }
 
 SignInPage.propTypes = {
-    logoutUser: PropTypes.func.isRequired,
     loginUser: PropTypes.func.isRequired,
-    signUpUser: PropTypes.func.isRequired,
-    getProfileData: PropTypes.func.isRequired,
-    isAuthenticated: PropTypes.bool.isRequired
+    isAuthenticated: PropTypes.bool.isRequired,
+    error: PropTypes.object.isRequired
 }
 
 const mapStateToProps = (state) => ({
-    isAuthenticated: state.user.isAuthenticated
+    isAuthenticated: state.user.isAuthenticated,
+    error: state.error
 });
 
 export default connect(mapStateToProps, {
-    loginUser,
-    logoutUser,
-    signUpUser,
-    getProfileData
+    loginUser
 })(SignInPage);

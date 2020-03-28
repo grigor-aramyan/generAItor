@@ -14,6 +14,13 @@
   font-family: 'Roboto', sans-serif;
 }
 
+.local_err_msg {
+  display: block;
+  color: aqua;
+  font-style: italic;
+  margin-top: 0.5em;
+}
+
 /* Header */
 
 .header {
