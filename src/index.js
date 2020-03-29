@@ -18,13 +18,14 @@ import GetIdeas from './components/GetIdea/GetIdea';
 import ProfileClick from './components/profileClick/ProfileClick';
 import SignInPage from './components/signInPage/signInPage';
 import SignUp from './components/signup/SignUp';
+import Followers from './components/followers/Followers';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={UserProfile} />
+          <Route exact path="/" component={Followers} />
           <Route path="/signin" component={SignInPage} />
           <Route
             path="/*"

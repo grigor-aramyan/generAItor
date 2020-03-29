@@ -1919,3 +1919,40 @@
   color: #edc536;
 }
 /* Sign Up page  END*/
+
+/* Main part of Followers  */
+.followers-title-wrapper {
+  margin-top: 120px;
+}
+.followers-title {
+  font-family: Avenida Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.14em;
+  color: #000000;
+}
+
+.followers-count-wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+.follower-card {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+
+.followers-count {
+  font-size: 24px;
+  line-height: 31px;
+  color: #edc536;
+}
+
+.follower-name {
+  font-size: 24px;
+  line-height: 31px;
+  color: #000000;
+}
+/* Main part of Followers  END*/
