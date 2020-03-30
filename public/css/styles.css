@@ -1956,3 +1956,98 @@
   color: #000000;
 }
 /* Main part of Followers  END*/
+
+/* Main part of Organizations */
+.org-title-wrapper {
+  margin-top: 60px;
+  text-align: center;
+}
+.org-title {
+  font-family: Avenida Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.08em;
+  color: #000000;
+}
+
+.select-orgs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 292px;
+  height: 41px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+  margin: auto;
+  margin-top: 60px;
+}
+
+.org-transparent-image {
+  width: 292px;
+  height: 279px;
+  background: linear-gradient(
+    180deg,
+    rgba(235, 235, 235, 0.955729) 0%,
+    rgba(255, 255, 255, 0.6) 73.96%
+  );
+  position: absolute;
+  left: 50%;
+  z-index: 10;
+  margin-left: -146px;
+}
+.select-icon {
+  margin-right: 20px;
+  width: 15px;
+  height: 15px;
+  margin-top: 13.5px;
+}
+.select-title {
+  font-size: 18px;
+  line-height: 21px;
+  color: #000000;
+  margin-left: 20px;
+  cursor: pointer;
+}
+.select-list {
+  position: absolute;
+  left: 43%;
+  z-index: 16;
+  margin-top: 30px;
+  margin-left: 30px;
+}
+.category-list-item {
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  color: #000000;
+  border: none;
+  list-style-type: none;
+  margin-top: 8px;
+  cursor: pointer;
+}
+
+.org-card {
+  position: relative;
+  z-index: 1;
+  margin: 120px;
+}
+
+.hover-btn {
+  font-size: 18px;
+  line-height: 21px;
+  text-transform: uppercase;
+  background: #edc536;
+  color: #ffffff;
+  width: 137px;
+  height: 50px;
+  text-align: center;
+  border: none;
+  position: relative;
+  z-index: 3;
+  top: -200px;
+  left: 68px;
+}
+/* Main part of Organizations END*/
