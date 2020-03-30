@@ -74,7 +74,8 @@ class Organizations extends Component {
               );
             })}
         </ul>
-        <div className="org-transparent-image"></div>
+        {isdropdownActive && <div className="org-transparent-image"></div>}
+
         <div className="d-flex justify-content-center">
           {organizations.map(
             (e, i) =>

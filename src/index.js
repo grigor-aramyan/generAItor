@@ -20,13 +20,14 @@ import SignInPage from './components/signInPage/signInPage';
 import SignUp from './components/signup/SignUp';
 import Followers from './components/followers/Followers';
 import Organizations from './components/organizations/Organizations';
+import IdeaGenerators from './components/ideaGenerators/IdeaGenerators';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={Organizations} />
+          <Route exact path="/" component={IdeaGenerators} />
           <Route path="/signin" component={SignInPage} />
           <Route
             path="/*"
