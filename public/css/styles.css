@@ -1196,6 +1196,7 @@
 .about-links:hover {
   text-decoration: none;
   color: #000000;
+  transition: all 0.3s;
 }
 
 .yellow {
@@ -2051,3 +2052,73 @@
   left: 68px;
 }
 /* Main part of Organizations END*/
+
+/* Feedbacks styling START*/
+.feedbacks-title-wrapper {
+  margin: 0px 0px 120px;
+  padding-top: 120px;
+}
+.feedbacks-title {
+  padding-top: 120px;
+  font-family: Avenida Std;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  text-align: center;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: #000000;
+}
+.feedbacks-buttons-wrapper {
+  width: 558px;
+  height: 81px;
+  margin: 0 auto;
+  text-align: center;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  
+}
+.btn-selected {
+  margin: -10px;
+  width: 168px;
+  height: 101px;
+  background: #edc536;
+  border: none;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  transition: all 0.5s;
+}
+.btn-non_selected {
+    width: 150px;
+    height: 70px;
+    border: none;
+    text-align: center;
+    font-size: 24px;
+    line-height: 28px;
+    color: #000000;
+    background: #ffffff;
+}
+.right_angle {
+  font-size: 48px;
+  color: #EDC536;
+  padding: 0px 15px;
+}
+.links-wrapper{
+  margin: 70px 0px;
+}
+.span_between {
+  width: 60px;
+}
+.feedback_box {
+  width: 645px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-bottom: 60px;
+}
+.feedback-card {
+  margin-left: 60px;
+  margin-top: 60px;
+}
+/* Feedbacks styling END*/

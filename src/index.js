@@ -19,6 +19,7 @@ import ProfileClick from './components/profileClick/ProfileClick';
 import SignInPage from './components/signInPage/signInPage';
 import SignUp from './components/signup/SignUp';
 import Followers from './components/followers/Followers';
+import Feedbacks from './components/feedbacks/Feedbacks';
 import Organizations from './components/organizations/Organizations';
 import IdeaGenerators from './components/ideaGenerators/IdeaGenerators';
 

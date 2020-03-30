@@ -21,3 +21,7 @@ export const LOAD_LOCAL_TOKEN = 'LOAD_LOCAL_TOKEN';
 //get follower types
 export const GET_FOLLOWERS = 'GET_FOLLOWERS';
 export const GET_FOLLOWERS_FAILED = 'GET_FOLLOWERS_FAILED';
+
+// feedbacks types
+export const GET_FEEDBACK = 'GET_FEEDBACK';
+export const GET_FEEDBACK_FAILED = 'GET_FEEDBACK_FAILED';
