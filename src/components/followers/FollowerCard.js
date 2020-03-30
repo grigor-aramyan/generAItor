@@ -7,7 +7,7 @@ class FollowerCard extends Component {
     return (
       <div className="follower-card">
         <img src={imgSrc} alt="img" className="follower-image" />
-        <p className="follower-name">
+        <p className="follower-name mt-3">
           {name} {surname}
         </p>
       </div>
