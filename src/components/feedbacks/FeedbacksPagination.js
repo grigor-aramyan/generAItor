@@ -70,7 +70,6 @@ class FeedbacksPagination extends Component {
 
     render() {
         const { feedbacks } = this.props;
-        console.log(this.props)
 
         const {
             feedbackPerPage,
@@ -82,7 +81,7 @@ class FeedbacksPagination extends Component {
 
         const indexOfLastIdea = currentPage * feedbackPerPage;
         const indexOfFirstIdea = indexOfLastIdea - feedbackPerPage;
-        const currentFeedback = ideas.slice(indexOfFirstIdea, indexOfLastIdea);
+        const currentFeedback = feedbacks.slice(indexOfFirstIdea, indexOfLastIdea);
         
         const renderFeedback = currentFeedback
             .filter(item => item.id)
@@ -91,7 +90,7 @@ class FeedbacksPagination extends Component {
         })
 
         const pageNumbers = [];
-        for (let i = 1; i <= Math.ceil(feedbacks.length / numbersPerPage); i++) {
+        for (let i = 1; i <= Math.ceil(feedbacks.length / feedbackPerPage); i++) {
             pageNumbers.push(i);
         }
         const renderPageNumber = pageNumbers.map(number => {
