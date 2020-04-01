@@ -22,6 +22,11 @@ class Organizations extends Component {
           imgSrc: 'images/org-rect.png'
         },
         {
+          category: 'Telecomication',
+          name: 'Rostelecom',
+          imgSrc: 'images/org-rect.png'
+        },
+        {
           category: 'Programing',
           name: 'Rostelecom',
           imgSrc: 'images/org-rect.png'
@@ -76,7 +81,7 @@ class Organizations extends Component {
         </ul>
         {isdropdownActive && <div className="org-transparent-image"></div>}
 
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center organizations-card-wrapper">
           {organizations.map(
             (e, i) =>
               e.category === selectedCategory && (
