@@ -1959,6 +1959,11 @@
 /* Main part of Followers  END*/
 
 /* Main part of Organizations */
+
+.ideaGenerators-card-wrapper {
+  width: 780px;
+  margin: 0 auto;
+}
 .org-title-wrapper {
   margin-top: 60px;
   text-align: center;
@@ -2033,7 +2038,9 @@
 .org-card {
   position: relative;
   z-index: 1;
-  margin: 120px;
+  margin-left: 60px;
+  margin-top: 120px;
+  /* margin: 120px; */
 }
 
 .hover-btn {
@@ -2050,6 +2057,12 @@
   z-index: 3;
   top: -200px;
   left: 68px;
+}
+
+.organizations-card-wrapper {
+  width: 1000px;
+  margin: 0 auto;
+  flex-wrap: wrap;
 }
 /* Main part of Organizations END*/
 
@@ -2076,7 +2089,6 @@
   margin: 0 auto;
   text-align: center;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
-  
 }
 .btn-selected {
   margin: -10px;
@@ -2091,21 +2103,21 @@
   transition: all 0.5s;
 }
 .btn-non_selected {
-    width: 150px;
-    height: 70px;
-    border: none;
-    text-align: center;
-    font-size: 24px;
-    line-height: 28px;
-    color: #000000;
-    background: #ffffff;
+  width: 150px;
+  height: 70px;
+  border: none;
+  text-align: center;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  background: #ffffff;
 }
 .right_angle {
   font-size: 48px;
-  color: #EDC536;
+  color: #edc536;
   padding: 0px 15px;
 }
-.links-wrapper{
+.links-wrapper {
   margin: 70px 0px;
 }
 .span_between {
@@ -2122,3 +2134,103 @@
   margin-top: 60px;
 }
 /* Feedbacks styling END*/
+
+/*All Sittings */
+.logOut-btn {
+  width: 240;
+}
+.sittings-section {
+  width: 368px;
+  margin-top: 30px;
+}
+.section-btn {
+  width: 368px;
+  height: 58px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+}
+
+.section-btn-text {
+  font-size: 24px;
+  line-height: 58px;
+  color: #000000;
+  margin-left: 30px;
+  margin-top: 15px;
+  cursor: pointer;
+}
+.section-vector-img {
+  width: 22px;
+  height: 13px;
+  margin-right: 30px;
+  transform: rotate(270deg);
+}
+.section-sub-wrapper {
+  text-align: center;
+}
+
+/* password sittings */
+
+.sub-password-input {
+  border: none;
+  width: 348px;
+  border-bottom: 1px solid #000000;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+.sub-password-input::placeholder {
+  font-size: 14px;
+  line-height: 16px;
+  color: rgba(0, 0, 0, 0.7);
+}
+
+.pass-save-btn {
+  width: 240px;
+  height: 61px;
+  background: #ffffff;
+  margin: 0 auto;
+  margin-top: 60px;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #000000;
+  border: 2px solid #edc536;
+  box-sizing: border-box;
+  transition: all ease-in-out 0.5s;
+}
+
+.pass-save-btn:hover {
+  background: #edc536;
+  color: #ffffff;
+}
+
+/* password sittings End*/
+
+/* General Sittings */
+
+.general-sittings-textarea {
+  width: 460px;
+  height: 181px;
+  padding: 20px 15px;
+  background: #ffffff;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  margin-left: -45px;
+  margin-top: 60px;
+}
+.general-sittings-textarea::placeholder {
+  font-size: 18px;
+  line-height: 21px;
+  color: rgba(0, 0, 0, 0.25);
+}
+/* General Sittings End*/
+
+/* Subscription */
+.current-plan {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-top: 60px;
+}
+/* Subscription END*/
+
+/*All Sittings END*/

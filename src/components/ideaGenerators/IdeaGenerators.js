@@ -8,6 +8,7 @@ class IdeaGenerators extends React.Component {
       topGenerators: [
         { name: 'Anna', surname: 'Hakobyan', img: 'images/follower1.png' },
         { name: 'Karine', surname: 'Antonyan', img: 'images/follower2.png' },
+        { name: 'Anna', surname: 'Hakobyan', img: 'images/follower1.png' },
         { name: 'Anna', surname: 'Hakobyan', img: 'images/follower1.png' }
       ]
     };
@@ -24,7 +25,7 @@ class IdeaGenerators extends React.Component {
         <div className="followers-count-wrapper">
           <h3 className="followers-count">Top Generators</h3>
         </div>
-        <div className="d-flex justify-content-center">
+        <div className="d-flex justify-content-center flex-wrap ideaGenerators-card-wrapper">
           {topGenerators &&
             topGenerators.map((e, i) => (
               <div key={i} className="text-center">
