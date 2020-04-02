@@ -2234,3 +2234,61 @@
 /* Subscription END*/
 
 /*All Sittings END*/
+
+/* Reasons START */
+.reasons-wrapper {
+  padding-top: 120px;
+}
+.reason-header h1 {
+  font-family: 'Avenida Std';
+  font-weight: normal;
+  font-size: 48px;
+  line-height: 28px;
+  letter-spacing: 0.08em;
+  color: #000000;
+  margin: 60px auto;
+}
+.reasons-subheader h2 {
+  font-size: 36px;
+  line-height: 42px;
+  color: #000000;
+  margin-bottom: 60px;
+}
+.reason label {
+  margin: 0;
+}
+.reasons {
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+  margin-bottom: 20px;
+}
+.reasons label input {
+  position: absolute;
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+.reasons label i {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  border: 5px solid black;
+  margin-right: 10px;
+  cursor: pointer;
+}
+.reasons label input:checked ~ i {
+  background: #000000
+}
+.reasons-textarea {
+  background: #FFFFFF;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border: none;
+  margin-top: 30px;
+}
+.submit-wrapper {
+  margin: 60px 0 120px;
+}
+
+/* Reasons END */
