@@ -23,13 +23,14 @@ import Feedbacks from './components/feedbacks/Feedbacks';
 import Organizations from './components/organizations/Organizations';
 import IdeaGenerators from './components/ideaGenerators/IdeaGenerators';
 import Sittings from './components/sittings/Sittings';
+import ReasonForLeaving from './components/reasonForLeaving/reasonForLeaving';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={Sittings} />
+          <Route exact path="/" component={ReasonForLeaving} />
           <Route path="/signin" component={SignInPage} />
           <Route
             path="/*"
