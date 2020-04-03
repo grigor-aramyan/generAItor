@@ -1,11 +1,25 @@
 import React, { Component } from 'react';
+import { Redirect } from 'react-router';
 import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
-    loginUser
+    loginUser,
+    getMyProfileData
 } from '../../actions/userActions';
 
 class SignInPage extends Component {
+
+    componentDidUpdate() {
+        const {
+            isAuthenticated,
+            getMyProfileData
+        } = this.props;
+
+        if (isAuthenticated) {
+            getMyProfileData();
+        }
+    }
+    
     constructor() {
         super()
         this.state = {
@@ -55,6 +69,18 @@ class SignInPage extends Component {
     }
 
     render() {
+
+        const {
+            currentUser
+        } = this.props;
+
+        if (currentUser) {
+            if (currentUser.profile_type == 'Organization') {
+                return <Redirect to='/profiles/me/o' />
+            } else if (currentUser.profile_type == 'IdeaGeneraitor') {
+                return <Redirect to='/profiles/me/i' />
+            }
+        }
         
         const { emailValue, pswValue, errorMsg } = this.state;
 
@@ -116,14 +142,18 @@ class SignInPage extends Component {
 SignInPage.propTypes = {
     loginUser: PropTypes.func.isRequired,
     isAuthenticated: PropTypes.bool.isRequired,
-    error: PropTypes.object.isRequired
+    error: PropTypes.object.isRequired,
+    getMyProfileData: PropTypes.func.isRequired,
+    currentUser: PropTypes.object
 }
 
 const mapStateToProps = (state) => ({
     isAuthenticated: state.user.isAuthenticated,
-    error: state.error
+    error: state.error,
+    currentUser: state.user.currentUser
 });
 
 export default connect(mapStateToProps, {
-    loginUser
+    loginUser,
+    getMyProfileData
 })(SignInPage);

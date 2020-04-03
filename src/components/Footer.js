@@ -45,10 +45,10 @@ export default class Footer extends Component {
           <div className="flex-container text-center">
             <div className="footer-social-icons-wrapper">
               <div className="footer-icon">
-                <img src="images/fb-logo.png" alt="fb-logo" />
+                <img src="/images/fb-logo.png" alt="fb-logo" />
               </div>
               <div className="footer-icon">
-                <img src="images/in-logo.png" alt="in-logo" />
+                <img src="/images/in-logo.png" alt="in-logo" />
               </div>
             </div>
             <div className="footer-contacts">

@@ -30,8 +30,10 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={ReasonForLeaving} />
+          <Route exact path="/" component={SignInPage} />
           <Route path="/signin" component={SignInPage} />
+          <Route path="/profiles/me/i" component={UserProfile} />
+          <Route path="/profiles/me/o" component={OrgProfile} />
           <Route
             path="/*"
             render={() => {

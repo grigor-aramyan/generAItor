@@ -18,7 +18,7 @@ export default class OrgProfileMain extends Component {
          <div className="d-flex justify-content-around align-items-center org_profile">
           <div className="organization_images-wrapper">
            <div className="user-image-recatngle">
-            <img src="images/org_profile_img.png" 
+            <img src="/images/org_profile_img.png" 
                  alt="organization profile image"
                  className="org_profile_img"/>
            </div>

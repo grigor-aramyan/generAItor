@@ -22,7 +22,7 @@ export default class UserProfileMain extends Component {
           <div className="imgRect-wrapper">
             <div className="user-image-recatngle"></div>
             <div className="user-image-wrapper">
-              <img src="images/userProfileImage.png" alt="profile-image" />
+              <img src="/images/userProfileImage.png" alt="profile-image" />
             </div>
           </div>
           <div className="user-informText-wrapper">

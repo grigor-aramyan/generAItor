@@ -69,15 +69,15 @@ export default function(state = initialState, action) {
                 };
             }
         case GET_MY_PROFILE_DATA:
-            const profileType = action.payload.user.profile_type;
+            const profileType2 = action.payload.user.profile_type;
             
-            if (profileType == 'Organization') {
+            if (profileType2 == 'Organization') {
                 return {
                     ...state,
                     currentUser: action.payload.user,
                     currentOrganization: action.payload.profile
                 };
-            } else if (profileType == 'IdeaGeneraitor') {
+            } else if (profileType2 == 'IdeaGeneraitor') {
                 return {
                     ...state,
                     currentUser: action.payload.user,
