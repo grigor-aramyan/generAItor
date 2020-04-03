@@ -32,6 +32,8 @@ ReactDOM.render(
         <Switch>
           <Route exact path="/" component={SignInPage} />
           <Route path="/signin" component={SignInPage} />
+
+          
           <Route path="/profiles/me/i" component={UserProfile} />
           <Route path="/profiles/me/o" component={OrgProfile} />
           <Route

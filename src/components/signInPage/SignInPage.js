@@ -4,10 +4,21 @@ import { connect } from 'react-redux';
 import PropTypes from 'prop-types';
 import {
     loginUser,
-    getMyProfileData
+    getMyProfileData,
+    loadLocalToken
 } from '../../actions/userActions';
 
 class SignInPage extends Component {
+
+    componentDidMount() {
+        const {
+            loadLocalToken,
+            getMyProfileData
+        } = this.props;
+        
+        loadLocalToken();
+        getMyProfileData();
+    }
 
     componentDidUpdate() {
         const {
@@ -144,7 +155,8 @@ SignInPage.propTypes = {
     isAuthenticated: PropTypes.bool.isRequired,
     error: PropTypes.object.isRequired,
     getMyProfileData: PropTypes.func.isRequired,
-    currentUser: PropTypes.object
+    currentUser: PropTypes.object,
+    loadLocalToken: PropTypes.func.isRequired
 }
 
 const mapStateToProps = (state) => ({
@@ -155,5 +167,6 @@ const mapStateToProps = (state) => ({
 
 export default connect(mapStateToProps, {
     loginUser,
-    getMyProfileData
+    getMyProfileData,
+    loadLocalToken
 })(SignInPage);
