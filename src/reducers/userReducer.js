@@ -7,6 +7,8 @@ import {
     SIGN_UP_FAILED,
     GET_PROFILE_DATA,
     GET_PROFILE_DATA_FAILED,
+    GET_MY_PROFILE_DATA,
+    GET_MY_PROFILE_DATA_FAILED,
     LOAD_LOCAL_TOKEN
 } from '../actions/types';
 
@@ -15,7 +17,10 @@ const initialState = {
     isAuthenticated: false,
     user: null,
     organization: null,
-    ideaGeneraitor: null
+    ideaGeneraitor: null,
+    currentUser: null,
+    currentOrganization: null,
+    currentIdeaGeneraitor: null
 }
 
 export default function(state = initialState, action) {
@@ -40,7 +45,10 @@ export default function(state = initialState, action) {
                 isAuthenticated: false,
                 user: null,
                 organization: null,
-                ideaGeneraitor: null
+                ideaGeneraitor: null,
+                currentUser: null,
+                currentIdeaGeneraitor: null,
+                currentOrganization: null
             };
         case SIGN_OUT_FAILED:
             return state;
@@ -60,6 +68,23 @@ export default function(state = initialState, action) {
                     ideaGeneraitor: action.payload.profile
                 };
             }
+        case GET_MY_PROFILE_DATA:
+            const profileType = action.payload.user.profile_type;
+            
+            if (profileType == 'Organization') {
+                return {
+                    ...state,
+                    currentUser: action.payload.user,
+                    currentOrganization: action.payload.profile
+                };
+            } else if (profileType == 'IdeaGeneraitor') {
+                return {
+                    ...state,
+                    currentUser: action.payload.user,
+                    currentIdeaGeneraitor: action.payload.profile
+                };
+            }
+        case GET_MY_PROFILE_DATA_FAILED:
         case GET_PROFILE_DATA_FAILED:
             return state;
         case LOAD_LOCAL_TOKEN:

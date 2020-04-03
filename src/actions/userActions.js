@@ -9,12 +9,48 @@ import {
   SIGN_UP_FAILED,
   GET_PROFILE_DATA,
   GET_PROFILE_DATA_FAILED,
+  GET_MY_PROFILE_DATA,
+  GET_MY_PROFILE_DATA_FAILED,
   LOAD_LOCAL_TOKEN
 } from '../actions/types';
 
 // Constants
 export const BASE_URI = 'https://intense-temple-11495.herokuapp.com';
 // export const BASE_URI = 'http://localhost:3000';
+
+export const getMyProfileData = () => (dispatch, getState) => {
+  const uri = `${BASE_URI}/profiles/show/me`;
+
+  axios
+    .get(uri, tokenConfig(getState))
+    .then(res => {
+      if (res.status == 200 && res.statusText == 'OK') {
+        dispatch({
+          type: GET_MY_PROFILE_DATA,
+          payload: res.data.data
+        });
+      } else {
+        dispatch({
+          type: GET_MY_PROFILE_DATA_FAILED
+        });
+        dispatch(
+          returnErrors(res.statusText, res.status, GET_MY_PROFILE_DATA_FAILED)
+        );
+      }
+    })
+    .catch(err => {
+      dispatch({
+        type: GET_MY_PROFILE_DATA_FAILED
+      });
+      dispatch(
+        returnErrors(
+          err.response.data,
+          err.response.status,
+          GET_MY_PROFILE_DATA_FAILED
+        )
+      );
+    });
+};
 
 export const getProfileData = id => (dispatch, getState) => {
   const uri = `${BASE_URI}/profiles/show/${id}`;
