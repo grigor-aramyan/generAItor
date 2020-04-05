@@ -24,16 +24,16 @@ import Organizations from './components/organizations/Organizations';
 import IdeaGenerators from './components/ideaGenerators/IdeaGenerators';
 import Sittings from './components/sittings/Sittings';
 import ReasonForLeaving from './components/reasonForLeaving/reasonForLeaving';
+import Messaging from './components/messaging/Messaging';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={SignInPage} />
+          <Route exact path="/" component={Messaging} />
           <Route path="/signin" component={SignInPage} />
 
-          
           <Route path="/profiles/me/i" component={UserProfile} />
           <Route path="/profiles/me/o" component={OrgProfile} />
           <Route
