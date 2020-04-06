@@ -25,13 +25,14 @@ import IdeaGenerators from './components/ideaGenerators/IdeaGenerators';
 import Sittings from './components/sittings/Sittings';
 import ReasonForLeaving from './components/reasonForLeaving/reasonForLeaving';
 import Messaging from './components/messaging/Messaging';
+import NavPage from './components/navPage/navPage';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={Messaging} />
+          <Route exact path="/" component={NavPage} />
           <Route path="/signin" component={SignInPage} />
 
           <Route path="/profiles/me/i" component={UserProfile} />
