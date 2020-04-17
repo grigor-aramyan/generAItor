@@ -1,9 +1,9 @@
-import React from 'react';
-import NavPage from '../navPage/navPage';
-import ProfileClick from '../ProfileClick/ProfileClick';
-import SignInPage from '../signInPage/SignInPage';
-import SignUp from '../signup/SignUp';
-import { connect } from 'react-redux';
+import React from "react";
+import NavPage from "../navPage/navPage";
+import ProfileClick from "../ProfileClick/ProfileClick";
+import SignInPage from "../signInPage/SignInPage";
+import SignUp from "../signup/SignUp";
+import { connect } from "react-redux";
 
 class GeneralMenu extends React.Component {
   constructor() {
@@ -15,7 +15,7 @@ class GeneralMenu extends React.Component {
   }
   render() {
     return (
-      <div>
+      <div className="postition-obsolute">
         {this.props.isOpen && (
           <div>
             {!this.state.toSignIn && !this.state.toSignUp ? (

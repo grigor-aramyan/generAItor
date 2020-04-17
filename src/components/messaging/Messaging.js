@@ -1,11 +1,12 @@
-import React from 'react';
-import SideBar from './SideBar';
-import Message from './Message';
-import MiniChat from './MiniChat';
+import React from "react";
+import SideBar from "./SideBar";
+import Message from "./Message";
+import MiniChat from "./MiniChat";
+import Header from "../Header";
 
 const activeMiniChat = {
-  position: 'absolute',
-  bottom: '10px',
+  position: "absolute",
+  bottom: "10px",
 };
 class Messaging extends React.Component {
   constructor() {
@@ -13,33 +14,34 @@ class Messaging extends React.Component {
     this.state = {
       users: [
         {
-          name: 'Rostelecom Armenia',
-          imgSrc: 'images/org_profile_img.png',
+          name: "Rostelecom Armenia",
+          imgSrc: "images/org_profile_img.png",
         },
         {
-          name: 'Ucom Armenia',
-          imgSrc: 'images/org_profile_img.png',
+          name: "Ucom Armenia",
+          imgSrc: "images/org_profile_img.png",
         },
       ],
       messages: [
-        { user: 'he', msg: 'Thank you for your feedback.' },
-        { user: 'me', msg: 'Thank you for your feedback.' },
+        { user: "he", msg: "Thank you for your feedback." },
+        { user: "me", msg: "Thank you for your feedback." },
       ],
       isActiveminiChat: false,
-      newMessage: '',
+      newMessage: "",
     };
   }
 
   sendMessage = () => {
-    const myMessage = { user: 'me', msg: this.state.newMessage };
+    const myMessage = { user: "me", msg: this.state.newMessage };
     this.state.messages.push(myMessage);
-    this.setState({ newMessage: '' });
+    this.setState({ newMessage: "" });
   };
   render() {
     const { messages, isActiveminiChat, users, newMessage } = this.state;
     return (
       <div>
-        <div className="container justify-content-center mt-5">
+        <Header />
+        <div className="container justify-content-center">
           <div className="row d-flex align-atems-center">
             <div className="col-3">
               <SideBar users={users} />
@@ -60,9 +62,9 @@ class Messaging extends React.Component {
                     <div key={i}>
                       <div
                         className={
-                          e.user == 'he'
-                            ? 'col-6 messages-content'
-                            : ' col-6 offset-6 messages-content'
+                          e.user == "he"
+                            ? "col-6 messages-content"
+                            : " col-6 offset-6 messages-content"
                         }
                       >
                         <Message message={e.msg} />

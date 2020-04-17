@@ -1,9 +1,9 @@
 /*fonts */
 @font-face {
-  font-family: 'Avenida Std';
+  font-family: "Avenida Std";
   font-style: normal;
   font-weight: normal;
-  src: url('../fonts/Avenida-Std-Regular.woff');
+  src: url("../fonts/Avenida-Std-Regular.woff");
 }
 
 * {
@@ -11,7 +11,7 @@
   padding: 0;
   box-sizing: border-box;
   outline: none;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
 }
 
 .local_err_msg {
@@ -69,7 +69,7 @@
 }
 
 .services-title {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 64px;
@@ -238,11 +238,11 @@
   color: #000000;
 }
 .footer-copyright {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
 }
 .footer-span {
   color: #000000;
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
 }
 
 /* Footer */
@@ -269,7 +269,7 @@
 }
 
 .main_left-side h1 {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   color: #edc536;
   font-size: 48px;
   line-height: 28px;
@@ -339,7 +339,7 @@
 }
 
 .inner-title {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   font-weight: normal;
   font-size: 48px;
   line-height: 28px;
@@ -359,7 +359,7 @@
   text-align: center;
 }
 .info_description-title {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 64px;
@@ -713,7 +713,7 @@
 }
 
 .get_in_touch-title {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 64px;
@@ -785,7 +785,7 @@
   margin-top: 120px;
 }
 .new-partners h1 {
-  font-family: 'Avenida Std', serif;
+  font-family: "Avenida Std", serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 64px;
@@ -873,7 +873,7 @@
   margin: 25px 48px 0 49px;
 }
 .my-drop::after {
-  content: '';
+  content: "";
   width: 20px;
   height: 20px;
   position: absolute;
@@ -1021,7 +1021,7 @@
 
 /* Organization profile actions start */
 .org-btnsTitle-wrapper h1 {
-  font-family: 'Avenida Std';
+  font-family: "Avenida Std";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1108,7 +1108,7 @@
   z-index: 1;
 }
 .about-prof h2 {
-  font-family: 'Avenida Std';
+  font-family: "Avenida Std";
   font-style: normal;
   font-weight: normal;
   font-size: 36px;
@@ -1616,7 +1616,7 @@
   margin: 120px auto;
 }
 .getIdea-title h2 {
-  font-family: 'Avenida Std';
+  font-family: "Avenida Std";
   font-size: 48px;
   line-height: 28px;
   text-align: center;
@@ -1729,7 +1729,7 @@
   margin: 30px 0;
 }
 .account_recover a {
-  font-family: 'Lato', sans-serif;
+  font-family: "Lato", sans-serif;
   font-size: 14px;
   line-height: 17px;
   text-align: center;
@@ -1925,7 +1925,7 @@
 
 /* Main part of Followers  */
 .followers-title-wrapper {
-  margin-top: 120px;
+  padding-top: 120px;
 }
 .followers-title {
   font-family: Avenida Std;
@@ -1967,7 +1967,7 @@
   margin: 0 auto;
 }
 .org-title-wrapper {
-  margin-top: 60px;
+  padding-top: 60px;
   text-align: center;
 }
 .org-title {
@@ -2242,7 +2242,7 @@
   padding-top: 120px;
 }
 .reason-header h1 {
-  font-family: 'Avenida Std';
+  font-family: "Avenida Std";
   font-weight: normal;
   font-size: 48px;
   line-height: 28px;
@@ -2302,6 +2302,7 @@
   background: #ffffff;
   box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
   padding-top: 60px;
+  margin-top: 120px;
 }
 
 .message-user-img-wrapper {
@@ -2321,6 +2322,7 @@
   padding-left: 60px;
   padding-right: 60px;
   overflow: auto;
+  margin-top: 120px;
 }
 
 .message-user-name {
@@ -2498,7 +2500,7 @@
 }
 .menu-btn span::before,
 .menu-btn span::after {
-  content: '';
+  content: "";
   display: block;
   transition: 0.2s;
 }
@@ -2590,3 +2592,20 @@
 }
 
 /* Navigation Page END */
+
+/* Styles for Genaral burger menu */
+.position-realtive {
+  position: relative;
+  z-index: 1;
+}
+
+.postition-obsolute {
+  position: absolute;
+  z-index: 150;
+  width: 100%;
+  height: 100%;
+  top: 87px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}

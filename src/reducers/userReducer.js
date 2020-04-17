@@ -10,10 +10,10 @@ import {
   GET_MY_PROFILE_DATA,
   GET_MY_PROFILE_DATA_FAILED,
   LOAD_LOCAL_TOKEN,
-} from '../actions/types';
+} from "../actions/types";
 
 const initialState = {
-  token: '',
+  token: "",
   isAuthenticated: false,
   user: null,
   organization: null,
@@ -27,7 +27,7 @@ export default function (state = initialState, action) {
   switch (action.type) {
     case SIGN_UP:
     case SIGN_IN:
-      localStorage.setItem('innojwt', action.token);
+      localStorage.setItem("innojwt", action.token);
 
       return {
         ...state,
@@ -37,11 +37,11 @@ export default function (state = initialState, action) {
     case SIGN_UP_FAILED:
     case SIGN_IN_FAILED:
     case SIGN_OUT:
-      localStorage.removeItem('innojwt');
+      localStorage.removeItem("innojwt");
 
       return {
         ...state,
-        token: '',
+        token: "",
         isAuthenticated: false,
         user: null,
         organization: null,
@@ -55,13 +55,13 @@ export default function (state = initialState, action) {
     case GET_PROFILE_DATA:
       const profileType = action.payload.user.profile_type;
 
-      if (profileType == 'Organization') {
+      if (profileType == "Organization") {
         return {
           ...state,
           user: action.payload.user,
           organization: action.payload.profile,
         };
-      } else if (profileType == 'IdeaGeneraitor') {
+      } else if (profileType == "IdeaGeneraitor") {
         return {
           ...state,
           user: action.payload.user,
@@ -71,13 +71,13 @@ export default function (state = initialState, action) {
     case GET_MY_PROFILE_DATA:
       const profileType2 = action.payload.user.profile_type;
 
-      if (profileType2 == 'Organization') {
+      if (profileType2 == "Organization") {
         return {
           ...state,
           currentUser: action.payload.user,
           currentOrganization: action.payload.profile,
         };
-      } else if (profileType2 == 'IdeaGeneraitor') {
+      } else if (profileType2 == "IdeaGeneraitor") {
         return {
           ...state,
           currentUser: action.payload.user,
