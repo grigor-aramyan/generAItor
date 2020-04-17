@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Header from '../Header';
 
 export default class GiveFeedbacksMain extends Component {
   constructor() {
@@ -10,23 +11,23 @@ export default class GiveFeedbacksMain extends Component {
       keywords: [],
       tempKeywords: '',
       selectedBtn: 'Good',
-      aboutLink: 'AboutCustomerService'
+      aboutLink: 'AboutCustomerService',
     };
   }
-  selectBtn = e => {
+  selectBtn = (e) => {
     this.setState({ selectedBtn: e.target.innerHTML });
   };
 
-  handleChange = e => {
+  handleChange = (e) => {
     this.setState({ [e.target.name]: e.target.value });
   };
 
-  setTempKeywords = e => {
+  setTempKeywords = (e) => {
     const word = e.target.value
       .replace(/,|;/g, '')
       .trim()
       .split(' ')
-      .filter(m => m !== '');
+      .filter((m) => m !== '');
     this.setState({ tempKeywords: word });
   };
 
@@ -37,7 +38,7 @@ export default class GiveFeedbacksMain extends Component {
 
       this.setState({
         keywords: oldKeywords,
-        tempKeywords: ''
+        tempKeywords: '',
       });
     }
   };
@@ -46,6 +47,7 @@ export default class GiveFeedbacksMain extends Component {
     const { keywords, selectedBtn, aboutLink, tempKeywords } = this.state;
     return (
       <div className="container-fluid">
+        <Header />
         <div className="row">
           <div className="col-10 offset-1 col-lg-8 offset-lg-2  d-flex justify-content-center align-items-center">
             <form
@@ -78,7 +80,7 @@ export default class GiveFeedbacksMain extends Component {
                       ? 'about-links yellow'
                       : 'about-links'
                   }
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     return this.setState({ aboutLink: 'AboutProductServices' });
                   }}
@@ -93,7 +95,7 @@ export default class GiveFeedbacksMain extends Component {
                       ? 'about-links yellow'
                       : 'about-links'
                   }
-                  onClick={e => {
+                  onClick={(e) => {
                     e.preventDefault();
                     return this.setState({ aboutLink: 'AboutCustomerService' });
                   }}

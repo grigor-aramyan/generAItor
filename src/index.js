@@ -26,13 +26,14 @@ import Sittings from './components/sittings/Sittings';
 import ReasonForLeaving from './components/reasonForLeaving/reasonForLeaving';
 import Messaging from './components/messaging/Messaging';
 import NavPage from './components/navPage/navPage';
+import Header from './components/Header';
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={NavPage} />
+          <Route exact path="/" component={Sittings} />
           <Route path="/signin" component={SignInPage} />
 
           <Route path="/profiles/me/i" component={UserProfile} />
