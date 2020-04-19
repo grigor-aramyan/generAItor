@@ -35,6 +35,8 @@
   /* padding-left: 60px !important;
   padding-right: 60px !important; */
   position: absolute;
+  width: 1440px;
+  height: 706px;
 }
 .header-wrapper {
   height: 72px;
@@ -45,17 +47,62 @@
   margin-left: 60px;
 }
 .header-profile-logo-wrapper {
-  padding-top: 44px;
+  padding-top: 50px;
   cursor: pointer;
 }
-.heaader-burger {
+.header-burger {
   cursor: pointer;
   margin-left: 30px;
-  padding-top: 45px;
+  padding-top: 38px;
 }
-.heaader-burger img {
-  margin-bottom: 7px;
-  margin-right: 60px;
+.header-burger-btn {
+
+}
+.header-menu-btn {
+  display: block;
+  color: #000000;
+  position: absolute;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.header-menu-btn:focus {
+  outline: none;
+}
+.header-menu-btn span,
+.header-menu-btn span::before,
+.header-menu-btn span::after {
+  display: block;
+  position: absolute;
+  width: 40px;
+  height: 3px;
+  background-color: #000000;
+}
+.header-menu-btn span::before,
+.header-menu-btn span::after {
+  content: "";
+  position: absolute;
+  display: block;
+  transition: 0.3s;
+}
+.header-menu-btn span::before {
+  transform: translateY(-8px);
+}
+.header-menu-btn span::after {
+  transform: translateY(8px);
+}
+
+.is-active span {
+  height: 0;
+}
+.is-active span:before {
+  transform: rotate(-40deg);
+}
+.is-active span:after {
+  transform: rotate(40deg);
 }
 
 /* Service */
@@ -1128,8 +1175,11 @@
 }
 /* End About Profiles  */
 
-/* Give feedbacks main part */
+/* Give feedbacks main part (and Give Idea) */
 
+.give-feedbacks-form-wrapper {
+  margin-top: 60px;
+}
 .feedback-title {
   font-family: Avenida Std;
   font-style: normal;
@@ -2478,45 +2528,50 @@
 /* Messaging component END*/
 
 /* Navigation Page START */
-/* Burger menu with hover effect*/
+/* Burger menu START*/
 .menu-btn {
   display: block;
+  color: #ffffff;
+  position: absolute;
   width: 50px;
   height: 50px;
-  color: #ffffff;
-  position: relative;
+  font-size: 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+.menu-btn:focus {
+  outline: none;
 }
 .menu-btn span,
 .menu-btn span::before,
 .menu-btn span::after {
+  display: block;
   position: absolute;
-  top: 50%;
-  margin-top: -1px;
-  left: 50%;
-  margin-left: -10px;
-  width: 20px;
-  height: 2px;
+  width: 40px;
+  height: 3px;
   background-color: #ffffff;
 }
 .menu-btn span::before,
 .menu-btn span::after {
   content: "";
+  position: absolute;
   display: block;
-  transition: 0.2s;
+  transition: 0.3s;
 }
 .menu-btn span::before {
-  transform: translateY(-5px);
+  transform: translateY(-8px);
 }
 .menu-btn span::after {
-  transform: translateY(5px);
+  transform: translateY(8px);
 }
-.menu-btn:hover span {
+.is-active span {
   height: 0;
 }
-.menu-btn:hover span:before {
+.is-active span:before {
   transform: rotate(-40deg);
 }
-.menu-btn:hover span:after {
+.is-active span:after {
   transform: rotate(40deg);
 }
 

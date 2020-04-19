@@ -33,7 +33,7 @@ ReactDOM.render(
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={AboutUsPage} />
+          <Route exact path="/" component={GiveIdeas} />
           <Route path="/signin" component={SignInPage} />
 
           <Route path="/profiles/me/i" component={UserProfile} />

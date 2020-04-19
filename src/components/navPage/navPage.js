@@ -9,6 +9,7 @@ class NavPage extends Component {
       result: [],
       selectedLink: 'about',
       language: 'eng',
+      isActive: false
     };
   }
 
@@ -18,14 +19,18 @@ class NavPage extends Component {
   selectLanguage = (e) => {
     this.setState({ language: e.target.innerHTML });
   };
+  isActiveHandle = () => {
+    this.setState({isActive: !this.state.isActive})
+  }
   showMenu = (e) => {
     console.log();
   };
 
   render() {
-    const { selectedLink, language } = this.state;
+    const { selectedLink, language, isActive } = this.state;
     console.log(this.state.selectedLink);
     console.log(this.state.language);
+    console.log(isActive)
 
     return (
       <div className="container-fluid profileClick">
@@ -35,10 +40,11 @@ class NavPage extends Component {
               <img src="images/logo_white.png" alt="logo_official" />
             </a>
           </div>
-          <div className="offset-8 heaader-burger d-flex flex-column">
-            <a href="#" className="menu-btn" onClick={this.showMenu}>
+          <div className="offset-8 header-burger d-flex flex-column">
+            <button className= {isActive ? "menu-btn is-active" : "menu-btn"} 
+            onClick={this.isActiveHandle}>
               <span></span>
-            </a>
+            </button>
           </div>
         </div>
         <div className="row justify-content-center signIn-wrapper">
