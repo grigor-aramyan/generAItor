@@ -7,7 +7,7 @@ export default class Footer extends Component {
         <div className="conatiner-fluid">
           <div className="footer-line"></div>
           <div className="row">
-              <div className="footer-links-wrapper">
+              <div className="col-md-12 col-sm-12 footer-links-wrapper">
                 <ul>
                   <li>
                 <a href="#" className="footer-link">
@@ -41,8 +41,8 @@ export default class Footer extends Component {
                 </li>
               </ul>
               </div>
-          </div>
-          <div className="flex-container text-center">
+
+          <div className="col-md-12 col-sm-12 flex-container">
             <div className="footer-social-icons-wrapper">
               <div className="footer-icon">
                 <img src="/images/fb-logo.png" alt="fb-logo" />
@@ -58,6 +58,9 @@ export default class Footer extends Component {
             <div className="footer-phone">
               <h2>Phone Number</h2>
             </div>
+            </div>
+            </div>
+            <div className="col-md-12 col-sm-12">
             <div className="footer-line2"></div>
             <div className="footer-privacy">
               <p>Privacy and Cookie Policy</p>

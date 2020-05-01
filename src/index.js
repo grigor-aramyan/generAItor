@@ -27,13 +27,14 @@ import ReasonForLeaving from "./components/reasonForLeaving/reasonForLeaving";
 import Messaging from "./components/messaging/Messaging";
 import NavPage from "./components/navPage/navPage";
 import Header from "./components/Header";
+import Footer from "./components/Footer";
 
 ReactDOM.render(
   <Provider store={store}>
     <Router>
       <Route path="/">
         <Switch>
-          <Route exact path="/" component={GiveIdeas} />
+          <Route exact path="/" component={AboutUsPage} />
           <Route path="/signin" component={SignInPage} />
 
           <Route path="/profiles/me/i" component={UserProfile} />

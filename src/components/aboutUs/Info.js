@@ -10,7 +10,7 @@ const Info = () => {
                     <div className="inner-title">INNOVITIES WE TRUST</div>
                 </div>
                 
-                <div className="info_description">
+                <div className="col-12 info_description">
                     <div className="info_description_about">
                         <div className="info_description-title">ABOUT US</div>
                         <p className="info_description-text">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's 
