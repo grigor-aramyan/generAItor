@@ -1805,6 +1805,9 @@
   color: #edc536;
   text-decoration: none;
 }
+.signIn-wrapper {
+  width: 100%;
+}
 .signIn-wrapper button:hover {
   background: #edc536;
   transition: background 0.4s;
@@ -1954,13 +1957,9 @@
   justify-content: center;
 }
 
-.social-buttons-wrapper {
-  display: flex;
-}
-
 .social-logos {
-  width: 85px;
-  height: 85px;
+  width: 55px;
+  height: 55px;
   margin: 10px;
 }
 
@@ -2678,7 +2677,7 @@
   right: 0;
   bottom: 0;
 }
-@media screen and (max-width:767px) {
+@media screen and (max-width: 767px) {
   .header-logo-wrapper {
     width: 150px;
     cursor: pointer;
@@ -2699,35 +2698,35 @@
 @media screen and (max-width: 575px) and (min-width: 375px) {
   .header {
     height: 60px;
-}
-.header-logo-wrapper {
-  width: 74px;
-  padding-top: 10px;
-  cursor: pointer;
-  margin-left: 10px;
-}
+  }
+  .header-logo-wrapper {
+    width: 74px;
+    padding-top: 10px;
+    cursor: pointer;
+    margin-left: 10px;
+  }
   .header-wrapper {
     height: 60px;
     margin-right: 0px;
-  } 
+  }
   .header-profile-logo-wrapper {
     display: none;
   }
   .header-logos {
-    width: 50%!important;
+    width: 50% !important;
   }
   .header-burger {
     cursor: pointer;
     padding-top: 0;
   }
   .header-menu {
-    width: 40%!important;
+    width: 40% !important;
   }
-.header-menu-btn span,
-.header-menu-btn span::before,
-.header-menu-btn span::after {
-  width: 30px;
-}
+  .header-menu-btn span,
+  .header-menu-btn span::before,
+  .header-menu-btn span::after {
+    width: 30px;
+  }
   /* About Us Page - Info component */
   .info {
     padding-top: 50px;
@@ -2754,7 +2753,7 @@
     line-height: 8px;
     text-align: center;
   }
-  
+
   .info_description-text {
     padding: 20px 55px 30px;
     margin-bottom: 0;
@@ -2777,7 +2776,7 @@
   .in_touch_img {
     padding-top: 60px;
   }
-  
+
   .get_in_touch-title {
     position: absolute;
     top: 57%;
@@ -2803,8 +2802,8 @@
   .get_in_touch-text {
     padding-top: 42px;
     padding-bottom: 30px;
-    padding-left: 0!important;
-    padding-right: 0!important;
+    padding-left: 0 !important;
+    padding-right: 0 !important;
     position: absolute;
     left: -12%;
   }
@@ -2828,7 +2827,7 @@
   }
   /* Footer component */
   .footer-links-wrapper {
-    width: 44%!important;
+    width: 44% !important;
     /* height: 28px; */
     /* display: grid;
     grid-template-columns: 1fr 1fr;
@@ -2840,7 +2839,7 @@
     margin-bottom: 30px;
     margin-left: 20px;
     text-align: left;
-    padding-right: 0!important;
+    padding-right: 0 !important;
   }
   .footer-links-wrapper ul {
     display: grid;
@@ -2857,12 +2856,12 @@
     font-size: 14px;
     line-height: 16px;
   }
-  
+
   .footer-links-wrapper ul li .footer-link:hover {
     text-decoration: none;
   }
   .flex-container {
-    width: 46%!important;
+    width: 46% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -2904,7 +2903,7 @@
     margin: 0 auto;
     border: 1px solid #edc536;
   }
-  
+
   .footer-privacy {
     text-align: center;
     font-size: 14px;
@@ -2916,7 +2915,7 @@
   .footer-privacy p {
     margin-bottom: 10px;
   }
-  
+
   .footer-innovities {
     font-size: 14px;
     line-height: 16px;
@@ -2924,5 +2923,64 @@
     letter-spacing: 0.13em;
     color: #edc536;
     margin-bottom: 20px;
+  }
+
+  /* responsive Sign IN Page */
+
+  .idea-generator-wrapper {
+    max-width: 184px;
+  }
+  .signIn_form {
+    display: flex;
+    flex-direction: column;
+  }
+  .signIn_input {
+    max-width: 173px;
+    font-size: 10px;
+    line-height: 12px;
+    height: 30px;
+  }
+  .idea-links {
+    font-size: 14px;
+    white-space: nowrap;
+  }
+  .profileButton {
+    width: 101px;
+    height: 32px;
+    font-size: 10px;
+    line-height: 2px;
+    text-align: center;
+    text-transform: uppercase;
+  }
+  .signIn_title {
+    font-size: 24px;
+    line-height: 14px;
+    padding: 60px 0 10px 0;
+  }
+  .account_recover {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
+  }
+  .idea-generator-wrapper {
+    margin-top: 30px;
+  }
+  .social-text {
+    font-size: 12px;
+    line-height: 14px;
+    text-align: center;
+  }
+  .social-logos {
+    width: 55px;
+    height: 55px;
+  }
+  /* responsive Sign IN Page END*/
+  /* responsive Sign UP*/
+  .signup-title {
+    font-size: 24px;
+    line-height: 14px;
+    text-transform: uppercase;
+    color: #ffffff;
   }
 }

@@ -32,15 +32,15 @@ import Footer from "./components/Footer";
 ReactDOM.render(
   <Provider store={store}>
     <Router>
-      <Route path="/">
+      <Route path='/'>
         <Switch>
-          <Route exact path="/" component={AboutUsPage} />
-          <Route path="/signin" component={SignInPage} />
+          <Route exact path='/' component={SignUp} />
+          <Route path='/signin' component={SignInPage} />
 
-          <Route path="/profiles/me/i" component={UserProfile} />
-          <Route path="/profiles/me/o" component={OrgProfile} />
+          <Route path='/profiles/me/i' component={UserProfile} />
+          <Route path='/profiles/me/o' component={OrgProfile} />
           <Route
-            path="/*"
+            path='/*'
             render={() => {
               return <div>Component not implemented yet!)</div>;
             }}

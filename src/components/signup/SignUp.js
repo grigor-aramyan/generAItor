@@ -1,19 +1,19 @@
-import React, { Component } from 'react';
-import { connect } from 'react-redux';
-import { signUpUser } from '../../actions/userActions';
-import PropTypes from 'prop-types';
+import React, { Component } from "react";
+import { connect } from "react-redux";
+import { signUpUser } from "../../actions/userActions";
+import PropTypes from "prop-types";
 
-import { Link } from 'react-router-dom';
+import { Link } from "react-router-dom";
 
 class SignUp extends Component {
   constructor() {
     super();
     this.state = {
-      aboutLink: 'IdeaGenerator',
-      email: '',
-      password: '',
-      confirmPassword: '',
-      errorMsg: '',
+      aboutLink: "IdeaGenerator",
+      email: "",
+      password: "",
+      confirmPassword: "",
+      errorMsg: "",
     };
   }
 
@@ -22,19 +22,19 @@ class SignUp extends Component {
 
     if (!email) {
       this.setState({
-        errorMsg: 'Email required!',
+        errorMsg: "Email required!",
       });
     } else if (!password) {
       this.setState({
-        errorMsg: 'Password required!',
+        errorMsg: "Password required!",
       });
     } else if (password.length < 8) {
       this.setState({
-        errorMsg: 'Password should contain at least 8 symbols',
+        errorMsg: "Password should contain at least 8 symbols",
       });
     } else if (!/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
       this.setState({
-        errorMsg: 'Email format looks invalid',
+        errorMsg: "Email format looks invalid",
       });
     } else if (password != confirmPassword) {
       this.setState({
@@ -42,26 +42,26 @@ class SignUp extends Component {
       });
     } else {
       this.setState({
-        errorMsg: '',
+        errorMsg: "",
       });
 
       let organization = null;
       let idea_generaitor = null;
-      if (aboutLink == 'Organization') {
+      if (aboutLink == "Organization") {
         organization = {
-          name: '',
-          logo_uri: '',
-          description: '',
+          name: "",
+          logo_uri: "",
+          description: "",
         };
-      } else if (aboutLink == 'IdeaGenerator') {
+      } else if (aboutLink == "IdeaGenerator") {
         idea_generaitor = {
-          full_name: '',
-          avatar_uri: '',
-          description: '',
+          full_name: "",
+          avatar_uri: "",
+          description: "",
         };
       } else {
         this.setState({
-          errorMsg: 'Something weird happened! Contact with us, please!',
+          errorMsg: "Something weird happened! Contact with us, please!",
         });
         return;
       }
@@ -72,13 +72,13 @@ class SignUp extends Component {
           password: password,
           password_confirmation: confirmPassword,
           accountable_type:
-            aboutLink == 'IdeaGenerator' ? 'IdeaGeneraitor' : 'Organization',
+            aboutLink == "IdeaGenerator" ? "IdeaGeneraitor" : "Organization",
         },
       };
-      if (aboutLink == 'IdeaGenerator') {
-        body.user['idea_generaitor'] = idea_generaitor;
+      if (aboutLink == "IdeaGenerator") {
+        body.user["idea_generaitor"] = idea_generaitor;
       } else {
-        body.user['organization'] = organization;
+        body.user["organization"] = organization;
       }
 
       this.props.signUpUser(body);
@@ -99,7 +99,7 @@ class SignUp extends Component {
     } = this.state;
     return (
       <div>
-        <div className="container-fluid signup-wrapper">
+        <div className='container-fluid signup-wrapper'>
           {/* <div className="row">
             <div className="col-2 p-4">
               <div className="signup-logo">
@@ -109,115 +109,115 @@ class SignUp extends Component {
               </div>
             </div>
           </div> */}
-          <div className="row">
-            <div className="col-10 offset-1 col-lg-8 offset-lg-2 d-flex justify-content-center align-items-center">
+          <div className='row'>
+            <div className='col-10 offset-1 col-lg-8 offset-lg-2 d-flex justify-content-center align-items-center'>
               <form
-                className="signup-form"
+                className='signup-form'
                 onSubmit={(e) => e.preventDefault()}
               >
-                <div className="signup-title-wrapper">
-                  <h1 className="signup-title">SIGN UP</h1>
+                <div className='signup-title-wrapper'>
+                  <h1 className='signup-title'>SIGN UP</h1>
                 </div>
-                <div className="idea-generator-wrapper">
+                <div className='idea-generator-wrapper'>
                   <a
-                    href=""
+                    href=''
                     className={
-                      aboutLink === 'Organization'
-                        ? 'idea-links yellow-link'
-                        : 'idea-links '
+                      aboutLink === "Organization"
+                        ? "idea-links yellow-link"
+                        : "idea-links "
                     }
                     onClick={(e) => {
                       e.preventDefault();
-                      this.setState({ aboutLink: 'Organization' });
+                      this.setState({ aboutLink: "Organization" });
                     }}
                   >
                     Organization
                   </a>
-                  <span className="or-span">/</span>
+                  <span className='or-span'>/</span>
                   <a
-                    href=""
+                    href=''
                     className={
-                      aboutLink === 'IdeaGenerator'
-                        ? 'idea-links yellow-link'
-                        : 'idea-links '
+                      aboutLink === "IdeaGenerator"
+                        ? "idea-links yellow-link"
+                        : "idea-links "
                     }
                     onClick={(e) => {
                       e.preventDefault();
-                      this.setState({ aboutLink: 'IdeaGenerator' });
+                      this.setState({ aboutLink: "IdeaGenerator" });
                     }}
                   >
                     Idea Genrator
                   </a>
                 </div>
-                <div className="signup-input-wrapper">
+                <div className='signup-input-wrapper'>
                   <input
-                    type="text"
-                    className="signup-input"
-                    placeholder="Email"
-                    name="email"
+                    type='text'
+                    className='signup-input'
+                    placeholder='Email'
+                    name='email'
                     value={email}
                     onChange={this.handleChange}
                   />
                   <input
-                    type="password"
-                    className="signup-input"
-                    placeholder="Password"
-                    name="password"
+                    type='password'
+                    className='signup-input'
+                    placeholder='Password'
+                    name='password'
                     value={password}
                     onChange={this.handleChange}
                   />
                   <input
-                    type="password"
-                    className="signup-input"
-                    placeholder="Confirm Password"
-                    name="confirmPassword"
+                    type='password'
+                    className='signup-input'
+                    placeholder='Confirm Password'
+                    name='confirmPassword'
                     value={confirmPassword}
                     onChange={this.handleChange}
                   />
                 </div>
-                <div className="signup-policy-wrapper">
-                  <p className="signup-policy-text">
-                    By creating your account you agree to our{' '}
-                    <a href="" className="signup-policy-link">
+                <div className='signup-policy-wrapper'>
+                  <p className='signup-policy-text'>
+                    By creating your account you agree to our <br />
+                    <a href='' className='signup-policy-link'>
                       Privacy
-                    </a>{' '}
-                    &{' '}
-                    <a href="" className="signup-policy-link">
+                    </a>{" "}
+                    &{" "}
+                    <a href='' className='signup-policy-link'>
                       Cookie Policy
-                    </a>{' '}
+                    </a>{" "}
                   </p>
                 </div>
                 {errorMsg ? (
-                  <span className="local_err_msg_centered">{errorMsg}</span>
+                  <span className='local_err_msg_centered'>{errorMsg}</span>
                 ) : null}
-                <div className="signup-button-wrapper">
-                  <button className="signup-button" onClick={this.onSignUpUser}>
+                <div className='signup-button-wrapper'>
+                  <button className='signup-button' onClick={this.onSignUpUser}>
                     Sign Up
                   </button>
                 </div>
-                <div className="middle-text-wrapper">
-                  <p className="middle-text">OR</p>
+                <div className='middle-text-wrapper'>
+                  <p className='middle-text'>OR</p>
                 </div>
-                <div className="social-buttons-wrapper">
-                  <p className="social-text">Sign up with</p>
-                  <a href="">
+                <div className='social-buttons-wrapper'>
+                  <p className='social-text'>Sign up with</p>
+                  <a href=''>
                     <img
-                      src="images/google-logo.png"
-                      alt=""
-                      className="social-logos"
+                      src='images/google-logo.png'
+                      alt=''
+                      className='social-logos'
                     />
                   </a>
-                  <a href="">
+                  <a href=''>
                     <img
-                      src="images/facebook-logo.png"
-                      alt=""
-                      className="social-logos"
+                      src='images/facebook-logo.png'
+                      alt=''
+                      className='social-logos'
                     />
                   </a>
                 </div>
 
-                <div className="have-account-wrapper">
-                  <Link to="/signIn" className="have-account-text">
+                <div className='have-account-wrapper'>
+                  <Link to='/signIn' className='have-account-text'>
                     Already have an account?
                   </Link>
                 </div>
