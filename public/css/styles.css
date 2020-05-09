@@ -1818,6 +1818,7 @@
 /* Sign Up page */
 .signup-wrapper {
   background: url(../images/signup-bg.png);
+  width: 100%;
 }
 
 .signup-title {
@@ -1864,6 +1865,7 @@
 .signup-input-wrapper {
   width: 560px;
   margin-top: 60px;
+  text-align: center;
 }
 .signup-input {
   width: 560px;
@@ -2964,6 +2966,8 @@
     letter-spacing: 0.1em;
   }
   .idea-generator-wrapper {
+    display: flex;
+    margin: auto;
     margin-top: 30px;
   }
   .social-text {
@@ -2982,5 +2986,37 @@
     line-height: 14px;
     text-transform: uppercase;
     color: #ffffff;
+    margin-top: 60px;
+  }
+  .signup-input-wrapper {
+    display: flex;
+    flex-direction: column;
+  }
+  .signup-input {
+    max-width: 173px;
+    font-size: 10px;
+    line-height: 12px;
+    height: 30px;
+    margin: auto;
+    margin-top: 30px;
+  }
+  .signup-input:first-of-type {
+    margin-top: -30px;
+  }
+  .signup-button {
+    width: 101px;
+    height: 32px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .middle-text {
+    font-size: 12px;
+    text-transform: uppercase;
+  }
+  .have-account-text {
+    font-size: 14px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.1em;
   }
 }
