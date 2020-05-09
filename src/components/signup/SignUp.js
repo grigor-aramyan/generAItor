@@ -146,7 +146,7 @@ class SignUp extends Component {
                       this.setState({ aboutLink: "IdeaGenerator" });
                     }}
                   >
-                    Idea Genrator
+                    Idea Generator
                   </a>
                 </div>
                 <div className='signup-input-wrapper'>
