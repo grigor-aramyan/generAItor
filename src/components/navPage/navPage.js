@@ -35,18 +35,35 @@ class NavPage extends Component {
     return (
       <div className="container-fluid profileClick">
         <div className="row">
-          <div className="col-md-2 profileClick_logo">
+          {/* <div className="col-md-2 profileClick_logo">
             <a href="#">
               <img src="images/logo_white.png" alt="logo_official" />
             </a>
           </div>
-          <div className="offset-8 header-burger d-flex flex-column">
-            <button className= {isActive ? "menu-btn is-active" : "menu-btn"} 
+          <div className="offset-8 header-burger d-flex flex-column"> */}
+            <div className="col-xl-2 col-lg-4 col-md-4 col-sm-4 col-xs-2 header-logos">
+          <div className="header-logo-wrapper">
+            <a href="#">
+              <img src="images/logo_white.png" alt="logo_official" />
+            </a>
+          </div>
+          </div>
+          <div className="offset-xl-6 offset-lg-4 offset-md-4 offset-sm-4"></div>
+          <div className="col-xl-4 col-lg-4 col-md-4 col-sm-4 col-xs-4 header-menu">
+            <div className="header-wrapper d-flex justify-content-end">
+            <div className="header-profile-logo-wrapper resp_white">
+                <img src="/images/noun_profile_logo.png" alt="profile_logo" />
+              </div>
+              <div className="header-burger d-flex flex-column">
+                <button className= {isActive ? "menu-btn is-active" : "menu-btn"} 
             onClick={this.isActiveHandle}>
               <span></span>
             </button>
           </div>
         </div>
+        </div>
+        </div>
+        
         <div className="row justify-content-center signIn-wrapper">
           <div className="col-md-6 d-flex flex-column justify-content-center align-items-center">
             <div className="searchForm">
