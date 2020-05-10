@@ -2679,6 +2679,9 @@
   right: 0;
   bottom: 0;
 }
+
+/* ========= MEDIA ========== */
+
 @media screen and (max-width: 767px) {
   .header-logo-wrapper {
     width: 150px;
@@ -2689,6 +2692,15 @@
   }
   .info {
     padding-top: 100px;
+  }
+  .profileClickButtons {
+    height: 360px;
+  }
+  .navLinks-wrapper ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
   }
 }
 /* @media screen and (max-width:766px) and (min-width:576px) {
@@ -2701,7 +2713,8 @@
   .header {
     height: 60px;
   }
-  .header-logo-wrapper {
+  .header-logo-wrapper,
+  .profileClick_logo {
     width: 74px;
     padding-top: 10px;
     cursor: pointer;
@@ -2726,9 +2739,12 @@
   }
   .header-menu-btn span,
   .header-menu-btn span::before,
-  .header-menu-btn span::after {
-    width: 30px;
-  }
+  .header-menu-btn span::after,
+  .menu-btn span,
+  .menu-btn span::before,
+  .menu-btn span::after {
+    width: 25px;
+}
   /* About Us Page - Info component */
   .info {
     padding-top: 50px;
@@ -2830,11 +2846,6 @@
   /* Footer component */
   .footer-links-wrapper {
     width: 44% !important;
-    /* height: 28px; */
-    /* display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: repeat(3, 16px);
-    grid-gap: 30px; */
     display: flex;
     justify-content: space-evenly;
     margin-top: 20px;
@@ -3019,4 +3030,57 @@
     text-align: center;
     letter-spacing: 0.1em;
   }
+
+  /* ===== Profile Click ========= */
+
+.profileClickButtons {
+  height: 64px;
+}
+.profileButtons-wrapper {
+  padding: 0 135px;
+  margin-top: 30px;
+}
+.profileButton {
+  width: 101px;
+  font-size: 10px;
+  line-height: 12px;
+  padding: 10px 20px;
+  text-align: center;
+  border: 1px solid #edc536;
+  flex-shrink: 0;
+  /* flex-grow: 0; */
+}
+
+/*  ====== Navigation Page ======= */
+
+.searchForm {
+  margin-top: 60px;
+}
+.searchForm label i {
+  background: url(../images/search.png);
+  background-size: contain;
+  top: 9px;
+  width: 15px;
+  height: 15px;
+}
+/* .search-btn {
+  position: absolute;
+  top: 30%;
+} */
+.search-field {
+  width: 150px;
+  height: 30px;
+  padding: 5px 0 0 25px;
+  font-size: 12px;
+}
+.navLinks-wrapper {
+  margin-top: 50px;
+  margin-bottom: 60px;
+}
+.navLinks-wrapper ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 }
