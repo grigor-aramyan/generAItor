@@ -34,7 +34,7 @@ ReactDOM.render(
     <Router>
       <Route path='/'>
         <Switch>
-          <Route exact path='/' component={ProfileClick} />
+          <Route exact path='/' component={Pricing} />
           <Route path='/signin' component={SignInPage} />
 
           <Route path='/profiles/me/i' component={UserProfile} />

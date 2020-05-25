@@ -9,41 +9,22 @@ import Footer from '../Footer';
 export default class Pricing extends Component {
   render() {
     return (
-      <div className="container-fluid">
+      <section className="container-fluid pricing-rectangle">
         <div className="row">
-          <div className="col-12">
-            <div className="pricing-header-wrapper">
-              <Header />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12 d-flex justify-content-between">
-            <div className="pricing-rectangle"></div>
-
-            <div className="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center pricing-image-wrapper ">
-              <img
-                src="images/pricing_page_image.png"
-                alt=""
-                className="responsive-image"
-              />
-            </div>
-            <div className="pricing-image-title-wrapper">
-              <h1 className="pricing-image-title">PRICING LIST</h1>
-            </div>
-            <div className="pricing-rectangle2"></div>
+          <Header />
+          <div className="col-12 image_content_pricing">
+            <img src="images/pricing_page_image.png" className="image_content-prc" alt="About us page" />
+            <div className="inner-title">PRICING LIST</div>
+            <img src="images/pricing_rectangle.png" className="pricing-bg" alt="" />
           </div>
         </div>
 
-        <div className="row">
+        <div className="row for_ideas">
           <div className="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
             <div className="pricing-idea-wrapper text-center">
               <h3 className="pricing-idea-text">FOR IDEA GENERATORS</h3>
-              <div className="pricing-idea-line"></div>
             </div>
           </div>
-        </div>
-        <div className="row">
           <PricingCart
             title="Free"
             lineOne="info 1"
@@ -52,57 +33,47 @@ export default class Pricing extends Component {
             price="10"
           />
         </div>
-        <div className="row">
+        <div className="row for_org">
           <div className="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
-            <div className="pricing-organization-wrapper">
-              <h3 className="pricing-organization-title">FOR ORGANIZATIONS</h3>
+            <div className="pricing-org-wrapper">
+              <h3 className="pricing-idea-text">FOR ORGANIZATIONS</h3>
             </div>
-            <div className="pricing-org-line"></div>
           </div>
+
+          <PricingCartOrg
+            title="Free"
+            lineOne="info 1"
+            lineTwo="info 2"
+            lineThree="info 2"
+            price="10"
+          />
+          <PricingCartOrg
+            title="Free"
+            lineOne="info 1"
+            lineTwo="info 2"
+            lineThree="info 2"
+            price="10"
+          />
+          <PricingCartOrg
+            title="Free"
+            lineOne="info 1"
+            lineTwo="info 2"
+            lineThree="info 2"
+            price="10"
+          />
+          <PricingCartOrg
+            title="Free"
+            lineOne="info 1"
+            lineTwo="info 2"
+            lineThree="info 2"
+            price="10"
+          />
+        </div>
+        <div className="row">
+          <Footer />
         </div>
 
-        <div className="row">
-          <div className="col-10 offset-1 col-lg-8 offset-lg-2 div-wrapper d-flex justify-content-center align-items-center">
-            <div className="pricing-org-rect-wrapper">
-              <PricingCartOrg
-                title="Free"
-                lineOne="info 1"
-                lineTwo="info 2"
-                lineThree="info 2"
-                price="10"
-              />
-              <PricingCartOrg
-                title="Free"
-                lineOne="info 1"
-                lineTwo="info 2"
-                lineThree="info 2"
-                price="10"
-              />
-              <PricingCartOrg
-                title="Free"
-                lineOne="info 1"
-                lineTwo="info 2"
-                lineThree="info 2"
-                price="10"
-              />
-              <PricingCartOrg
-                title="Free"
-                lineOne="info 1"
-                lineTwo="info 2"
-                lineThree="info 2"
-                price="10"
-              />
-            </div>
-          </div>
-        </div>
-        <div className="row">
-          <div className="col-12">
-            <div className="pricing-footer-wrapper">
-              <Footer />
-            </div>
-          </div>
-        </div>
-      </div>
+      </section>
     );
   }
 }

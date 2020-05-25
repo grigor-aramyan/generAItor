@@ -6,33 +6,32 @@ class PricingCartOrg extends Component {
     const { title, lineOne, lineTwo, lineThree, price } = this.props;
 
     return (
-      <div className="col-md-3 col-lg-3">
-        <div className="pricing-org-rectangle">
-          <h1 className="pricing-org-free-title">{title}</h1>
-          <div className="pricing-org-free-line"></div>
-          <div className="pricing-org-list-wrapper text-center">
+      <div className="col-6 col-md-4 col-lg-3 col-sm-6 d-flex justify-content-around">
+        <div className="pricing-center-rectangle">
+          <h4 className="pricing-free">{title}</h4>
+          <div className="pricing-list-wrapper text-center">
             <ul>
-              <li className="pricing-org-list-item">
+              <li className="pricing-list-item">
                 <img src="images/vector.png" alt="Vektor" />
                 {lineOne}
               </li>
-              <li className="pricing-org-list-item">
+              <li className="pricing-list-item">
                 <img src="images/vector.png" alt="Vektor" />
                 {lineTwo}
               </li>
-              <li className="pricing-org-list-item">
+              <li className="pricing-list-item">
                 <img src="images/vector.png" alt="Vektor" />
                 {lineThree}
               </li>
             </ul>
           </div>
-          <div className="pricing-price-org">
-            <span className="pricing-price-usd-org">USD</span>
-            <span className="pricing-price-num-org">{price}</span>
+          <div className="pricing-price">
+            <span className="pricing-price-usd">USD</span>
+            <span className="pricing-price-num">{price}</span>
           </div>
-          <div className="pricing-org-subscribe-btn">
+          <div className="pricing-subscribe-btn">
             <div>
-              <a className="pricing-org-btn-text" href="#">
+              <a className="pricing-btn-text" href="#">
                 subscribe
               </a>
             </div>
