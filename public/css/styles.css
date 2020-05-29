@@ -389,7 +389,7 @@
   margin-left: 60px;
   margin-right: 60px;
   text-align: center;
-  margin-bottom: 140px;
+  margin-bottom: 220px;
 }
 .image_content img {
   width: 100%;
@@ -595,6 +595,9 @@
   width: 100%;
   padding-top: 60px;
 }
+.in_touch_img img:first-child {
+  width: 100%;
+}
 
 .get_in_touch-title {
   font-family: "Avenida Std", serif;
@@ -605,7 +608,7 @@
   color: #000000;
   width: 100%;
   position: absolute;
-  top: 58%;
+  top: 14%;
   transform: translateY(-50%);
   text-align: center;
   z-index: 5;
@@ -2534,6 +2537,35 @@
     align-items: center;
     flex-direction: column;
   }
+  .image_content {
+    margin-bottom: 90px;
+  }
+  .info_description-text {
+    padding: 30px;
+  }
+  .in_touch_img img:nth-of-type(2) {
+    width: 30%;
+  }
+  .in_touch_div img {
+    height: 100%;
+  }
+  .get_in_touch-text {
+    padding-top: 60px;
+  }
+  .get_in_touch-text p {
+    font-size: 20px;
+    line-height: 30px;
+    margin-left: 10px;
+    margin-right: 0;
+  }
+  .get_in_touch-text button {
+    margin: 0;
+    margin-left: 10px;
+    width: 180px;
+  }
+  .get_in_touch-button {
+    padding: 10px;
+  }
 }
 /* @media screen and (max-width:766px) and (min-width:576px) {
   .header-logo-wrapper img {
@@ -2581,11 +2613,14 @@
   .info {
     padding-top: 50px;
   }
+  .info_description {
+    padding: 0!important;
+  }
   .image_content {
     margin-left: 20px;
     margin-right: 20px;
     text-align: center;
-    margin-bottom: 60px;
+    margin-bottom: 45px;
   }
   .image_content img {
     height: 90%;
@@ -2603,18 +2638,24 @@
     line-height: 8px;
     text-align: center;
   }
+  .info_description-title {
+    width: 200px;
+  }
 
   .info_description-text {
-    padding: 20px 55px 30px;
-    margin-bottom: 0;
+    padding: 0;
+    margin: 20px 20px 0;
     font-size: 14px;
     line-height: 148.19%;
     text-align: center;
   }
+  .info_description-text.first {
+    margin-bottom: 30px;
+  }
   /* In-Touch component */
   .about_line {
     position: absolute;
-    top: -4%;
+    top: 0;
     left: 0;
   }
   .in_touch img:first-child {
@@ -2628,9 +2669,9 @@
   }
 
   .get_in_touch-title {
-    position: absolute;
-    top: 57%;
-    z-index: 5;
+    /* position: absolute; */
+    /* top: 57%; */
+    /* z-index: 5; */
   }
   .in_touch-content {
     width: 100%;
@@ -2706,7 +2747,7 @@
     text-decoration: none;
   }
   .flex-container {
-    width: 46% !important;
+    width: 45% !important;
     display: flex;
     flex-direction: column;
     justify-content: center;
