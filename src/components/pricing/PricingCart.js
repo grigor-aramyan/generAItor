@@ -10,7 +10,6 @@ class PricingCart extends Component {
         <div className="pricing-center-rectangle">
           <div className="text-center">
             <h4 className="pricing-free">{title}</h4>
-            <div className="pricing-center-free-line"></div>
             <div className="pricing-list-wrapper">
               <ul>
                 <li className="pricing-list-item">

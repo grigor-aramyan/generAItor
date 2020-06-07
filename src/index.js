@@ -34,6 +34,7 @@ ReactDOM.render(
     <Router>
       <Route path='/'>
         <Switch>
+  
           <Route exact path='/' component={Homepage} />
           <Route path='/signin' component={SignInPage} />
 
