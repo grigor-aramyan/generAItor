@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 
 export default class Footer extends Component {
   render() {
@@ -51,25 +51,25 @@ export default class Footer extends Component {
                 <img src="/images/in-logo.png" alt="in-logo" />
               </div>
             </div>
-            <div className="footer-contacts">
-            <div className="footer-address">
-              <h2>Address</h2>
+
+            <div className='row'>
+              <div className='footer-contacts'>
+                <h2 className='footer-address'>Address</h2>
+                <h2 className='footer-phone'>Phone Number</h2>
+              </div>
             </div>
-            <div className="footer-phone">
-              <h2>Phone Number</h2>
-            </div>
-            </div>
-            </div>
-            <div className="col-md-12 col-sm-12">
-            <div className="footer-line2"></div>
-            <div className="footer-privacy">
+          </div>
+          <div className='col-12 mt-2'>
+            <div className='footer-line2'></div>
+            <div className='footer-privacy'>
               <p>Privacy and Cookie Policy</p>
             </div>
-            <div className="footer-innovities">
-              <p className="footer-copyright">
-                <span className="copyright">©</span> Innovities <span className="footer-span">2020</span>
+
+            <div className='footer-innovities'>
+              <p className='footer-copyright'>
+                <span className='copyright'>©</span> Innovities{" "}
+                <span className='footer-span'>2020</span>
               </p>
-            </div>
             </div>
           </div>
         </div>
