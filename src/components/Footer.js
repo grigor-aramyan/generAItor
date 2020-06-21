@@ -52,13 +52,18 @@ export default class Footer extends Component {
               </div>
             </div>
 
-            <div className='row'>
-              <div className='footer-contacts'>
-                <h2 className='footer-address'>Address</h2>
-                <h2 className='footer-phone'>Phone Number</h2>
-              </div>
+            {/* <div className='row'> */}
+            <div className="footer-contacts">
+            <div className="footer-address">
+              <h2>Address</h2>
             </div>
-          </div>
+            <div className="footer-phone">
+              <h2>Phone Number</h2>
+            </div>
+            </div>
+            </div>
+            {/* </div> */}
+          {/* </div> */}
           <div className='col-12 mt-2'>
             <div className='footer-line2'></div>
             <div className='footer-privacy'>
@@ -73,7 +78,7 @@ export default class Footer extends Component {
             </div>
           </div>
         </div>
-      // </div>
+      </div>
     );
   }
 }
