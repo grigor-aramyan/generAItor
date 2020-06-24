@@ -5,7 +5,7 @@ const Main = () => {
     <div className='container-fluid'>
         <div className='main'></div>
         <div className='row d-flex align-items-center justify-content-between'>
-          <div className='col-6'>
+          <div className='col-6 m-left'>
             <div className='main_left-side'>
               <h1 className='homepage-main-title text-center'>
                 INNOVITIES WE TRUST
@@ -16,7 +16,7 @@ const Main = () => {
               </p>
               <div style={{ textAlign: "center" }}>
                 <a href='#' className='main_button'>
-                  Learn More About Us
+                  Learn More
                 </a>
               </div>
             </div>
@@ -33,6 +33,7 @@ const Main = () => {
                 className='main_img-2'
                 alt='Main image'
               />
+              <hr className="main_line"></hr>
               
             </div>
           </div>

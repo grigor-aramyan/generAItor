@@ -4,7 +4,7 @@ export default class Partners extends React.Component {
     return (
       <section className='container new-partners'>
           <h1 className='text-center'>NEW PARTNERS</h1>
-          <div className='row mt-5 mb-5'>
+          <div className='row mt-5 mb-5 partners-wrapper'>
             <div className='col-4 partner-wrapper'>
               <img
                 src='images/partner.png'
