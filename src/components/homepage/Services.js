@@ -9,10 +9,6 @@ export default class Services extends Component {
         </div>
         <div className='services_content'>
           <div className='inner_content'>
-            <p className='service-texts-toggle '>
-              Give creative and innovitive ideas and leave feedbacks to
-              organizations.
-            </p>
             <div className='col-7 inner-image'>
               <img
                 src='images/services_image1.png'
@@ -25,7 +21,7 @@ export default class Services extends Component {
                 alt='services-bg'
               />
             </div>
-            <div className='col-5 inner-text'>
+            <div className='col-xl-5 col-lg-5 col-md-5 col-12 inner-text'>
               <p className='service-texts'>
                 Give creative and innovitive ideas and leave feedbacks to
                 organizations.
@@ -37,7 +33,7 @@ export default class Services extends Component {
           </div>
 
           <div className='inner_content'>
-            <div className='col-5 inner-text'>
+            <div className='col-xl-5 col-lg-5 col-md-5 col-12 inner-text'>
               <p className='service-texts service-texts-toggle'>
                 Get ideas and feedbacks about your services and products from
                 your users.
